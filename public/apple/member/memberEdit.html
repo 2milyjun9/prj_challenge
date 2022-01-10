@@ -8,6 +8,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Emily html projects </title>
 
+
+<style type="text/css">
+table, th, td {
+   border: 1px solid silver;
+   border-collapse: collapse;
+}
+
+th, td {
+   padding: 15px;
+}
+</style>
+
+
 </head>
 
 <body>
@@ -24,9 +37,8 @@
 		
 	<tr>
 	<th width="150px">성별</th>
-	<th width="150px"><select id="" name="select">
-					<option value="남성"> 남성
-					<option value="여성"  selected> 여성</th>
+	<th width="150px"> <input type="radio" id="" name="gender" > 남성
+		 <input type="radio" id="" name="gender" checked> 여성</th>
 	<th width="150px">생년월일</th>
 	<th colspan="2"><input type="date" id="" name="" value="1991-09-07"></th>
 	</tr>	
@@ -40,11 +52,23 @@
 			
 	<tr>
 	<th width="150px">모바일</th>
-	<th width="150px"><input type="text" id="" name="" value="010-9245-6252"></th>
+	<th width="150px">
+	                   <select id="" name="통신사">
+					<option value="SKT" selected> SKT
+					<option value="KT"> KT
+						<option value="LGU+"> LGU+
+						<option value="기타"> 기타 </select>
+						
+						<select id="" name="select">
+					<option value="010"  selected> 010
+					<option value="011" > 011  </select> 
+	<input type="text" id="" name="" value="-9245-6252"></th>
+	
+	
 	<th width="150px">모바일마케팅 수신동의</th>
 	<th colspan="2"><select id="" name="select">
 					<option value="Y" > Y
-					<option value="N" selected> N</th>
+					<option value="N" selected> N  </select> </th>
 	</tr>	
 
 	<tr>
@@ -58,7 +82,7 @@
 	<th width="150px">이메일마케팅 수신동의</th>
 	<th width="150px"><select id="" name="select">
 					<option value="Y" > Y
-					<option value="N" selected> N</th>
+					<option value="N" selected> N  </select></th>
 	<th width="150px">추천인</th>
 	<th colspan="2"> <input type="text" id="" name="" value="장원영선생님"></th>
 	</tr>
@@ -73,9 +97,16 @@
 	
 	<tr>
 	<th width="100px">SNS or 홈페이지</th>
-	<th width="150px">인스타 <input type="text" id="" name="" value="2milyjun9"></th>
+	<th width="150px"><select id="" name="sns">
+					<option value="인스타그램" selected> 인스타그램
+					<option value="페이스북"> 페이스북 
+						<option value="기타"> 기타 
+					  </select> <input type="text" id="" name="" value="2milyjun9">	 </th>
 	<th width="150px">사진</th>
-	<th colspan="2"><img src="./mirim.jpg" width="100px"  height="100px"> </th>
+	<th colspan="2"><img src="./mirim.jpg" width="100px"  height="100px"> 
+				   <form action="" method="get" id="" name=""
+					enctype="multipart/form-data">
+					<input type="file" id="" name=""> </form> </th>
 	</tr>
 	
 		
@@ -107,16 +138,28 @@
 	<tr>
 	<th width="50px"> 1</th>
 	<th width="150px"><input type="text" id="" name="" value="월리를 찾아라"></th>
-	<th width="150px">20.01~21.01</th>
-	<th>PM</th>
+	<th width="150px" height="100">
+				<form action="" method="get" id="" name=""
+					enctype="multipart/form-data">
+					<input type="month" id="" name="" value="2020-01">~
+				
+						<input type="month" id="" name="" value="2021-01"></form>
+			</th>
+	<th><input type="text" id="" name="" value="PM"> </th>
 	<th width="100px"><input type="text" id="" name="" value="gov"></th>
 	</tr>
 	
 		<tr>
 	<th width="50px"> 2</th>
 	<th width="150px"><input type="text" id="" name="" value="비거리 천재"></th>
-	<th width="150px">21.01~21.12</th>
-	<th>PM</th>
+	<th width="150px" height="100">
+				<form action="" method="get" id="" name=""
+					enctype="multipart/form-data">
+					<input type="month" id="" name="" value="2021-01"> ~
+				
+						<input type="month" id="" name="" value="2021-12" ></form>
+			</th>
+		<th><input type="text" id="" name="" value="PM"> </th>
 	<th width="100px"> <input type="text" id="" name="" value="골프존"></th>
 	</tr>
 	</table>
@@ -128,9 +171,14 @@
 	<table  border="1">
 	<tr>
 	<th width="100px"> 취미</th>
-	<th width="120px"> <input type="text" id="" name="" value="골프"></th>
-	<th width="180px" colspan="2"><input type="text" id="" name="" value="피아노"></th>
-	<th width="180px" colspan="2"> <input type="text" id="" name="" value="배틀그라운드"> </th>
+			<th width="120px" colspan="5">	
+			<input type="checkbox" id="" name="hobby"  checked> 영화감상
+		 <input type="checkbox" id="" name="hobby" > 음악감상 
+		<input type="checkbox" id="" name="hobby" > 당구
+		 <input type="checkbox" id="" name="hobby" checked > 골프	 
+		<input type="checkbox" id="" name="hobby"  checked> 피아노 
+		 <input type="checkbox" id="" name="hobby" > 바이올린</th>
+
 	</tr>
 	
 	
@@ -138,14 +186,15 @@
 	<th width="10px">  결혼여부</th>
 	<th width="100px"> <select id="" name="select">
 					<option value="Y" selected> Y
-					<option value="N"> N  </th>
+					<option value="N"> N   </select> </th>
 	<th width="100px"> 결혼기념일 </th>
-	<th width="100px"> 16.04.16 </th>
+	<th width="100px"> 	<form action="./formResult.html" method="get" id="" name="" enctype="multipart/form-data">
+		 <input type="date" id="" name="" value="2016-04-16"> </form>
+	 </th>
 	<th width="100px"> 자녀유무 </th>
 	<th width="100px"> <select id="" name="select">
 					<option value="Y" selected> Y
-					<option value="N"> N </th>
-	</tr>
+					<option value="N"> N  </select> </th>
 	
 	<tr>
 	<th width="110px"> 좋아하는색깔</th>
@@ -154,7 +203,7 @@
 	
 	<tr>
 	<th width="110px"> 본인소개</th>
-	<th width="400px" colspan="5"><input type="text" id="" name="" value="안녕하세요~">.  </th>
+	<th width="400px" colspan="5"><textarea rows="" cols=""> 안녕하세요~ 미림이에요~ </textarea> </th>
 	</tr>
 	
 	
@@ -163,13 +212,12 @@
 	<th width="400px" colspan="5"> <select id="" name="select">
 					<option value="1" selected>1년
 					<option value="2">3년
-					<option value="3">5년 </th>
+					<option value="3">5년   </select></th>
 	</tr>
 	
 	</table>
-	
-	
-	
+
+	     <a href="memberlist.html"> 목록 </a> 
 <br>
 </body>
 </html>
