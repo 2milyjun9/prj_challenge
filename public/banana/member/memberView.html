@@ -8,84 +8,98 @@
     <title> Emily html projects </title>
 
 <style type="text/css">
-table, th, td {
-   border: 1px solid silver;
-   border-collapse: collapse;
-    width: 900px;
-}
+	table, th, td {
+	   border: 1px solid silver;
+	   border-collapse: collapse;
+ 	  width: 900px;
+ 	  font-style : normal;
+      font-family: '맑은 고딕';
+ 	  margin:auto;
+		}
 
-th, td {
-   padding: 15px;
-}
-  #버튼 {
+	th, td {
+ 	  padding: 15px;
+ 	  font-style : normal;
+     font-family: '맑은 고딕';
+		}
+  
+ 	#button {
     border : solid;
     border-width : 1px;
-      border-color : grey;
-     border-radius:20px;
     margin : 10px;
     padding : 10px;
+    border-radius:20px;
+    font-size: 20px;
+     font-style : normal;
+     font-family: '맑은 고딕';
+    border : dotted;
+    border-color : red;
+     margin:auto;
+    }
+    
+    div {
+    text-align : center;
     }
   
 </style>
-
-
 </head>
 
 <body>
 
-<h1 align="center">회원 뷰</h1>
+<h1 align="center">회 원 뷰</h1>
+<div><img src="./banana.png" width="100px"  height="100px">   </div>
 
 	<table border="1">
 	<tr>
-	<th width="150px" height="50" >이름</th>    <!-- td는 좌측, th는 가운데정렬,볼드 -->
+	<th width="100px" >이름</th> 
 	<th width="500px" colspan="4" style="font-size: larger;">정미림 </th>
 	</tr>
 	
 	<tr>
-	<th width="150px" >아이디</th>
-	<th width="150px" style="background-color:yellow;" style="font-size: larger;"> mija345</th>
+	<th width="100px" >아이디</th>
+	<th width="130px" style="background-color: #ffffcc;" style="font-size: larger;"> mija345</th>
 	<th width="150px">비밀번호</th>
 	<th colspan="2">12******</th>
 	</tr>
 		
 	<tr>
-	<th width="150px">성별</th>
-	<th width="150px">여자</th>
+	<th width="100px">성별</th>
+	<th width="130px">여자</th>
 	<th width="150px">생년월일</th>
 	<th colspan="2">91.09.07</th>
 	</tr>	
 		
 	<tr>
-	<th width="150px">국적</th>
-	<th width="150px">대한민국</th>
+	<th width="100px">국적</th>
+	<th width="130px">대한민국</th>
 	<th width="150px">주소</th>
 	<th colspan="2">서울시 강서구 가양동</th>
 	</tr>	
 			
 	<tr>
-	<th width="150px">모바일</th>
-	<th width="150px"> SKT 010-9245-6252</th>
+	<th width="100px">모바일</th>
+	<th width="130px"> SKT 010-9245-6252</th>
 	<th width="150px">모바일마케팅 수신동의</th>
 	<th colspan="2">N</th>
 	</tr>	
 
 	<tr>
-	<th width="150px">전화번호</th>
-	<th width="150px">02-111-1111</th>
+	<th width="100px">전화번호</th>
+	<th width="130px">02-111-1111</th>
 	<th width="150px">이메일</th>
 	<th colspan="2">mija345@naver.com</th>
 	</tr>
 	
 	<tr>
-	<th width="150px">이메일마케팅 수신동의</th>
-	<th width="150px">N</th>
+	<th width="100px">이메일마케팅 수신동의</th>
+	<th width="130px">N</th>
 	<th width="150px">추천인</th>
 	<th colspan="2"> 장원영선생님</th>
 	</tr>
 	
 	<tr>
 	<th width="100px">비밀번호 문제</th>
-	<th width="150px">가장 좋아하는 영화는?</th>
+	<th width="130px">가장 좋아하는 영화는?</th>
 	<th width="150px">비밀번호 답</th>
 	<th colspan="2"> 인생은 아름다워</th>
 	</tr>
@@ -93,7 +107,7 @@ th, td {
 	
 	<tr>
 	<th width="100px">SNS or 홈페이지</th>
-	<th width="150px">인스타 2milyjun9</th>
+	<th width="130px">인스타 2milyjun9</th>
 	<th width="150px">사진</th>
 	<th colspan="2"><img src="./mirim.jpg" width="100px"  height="100px"> </th>
 	</tr>
@@ -101,7 +115,7 @@ th, td {
 		
 	<tr>
 	<th width="100px"> 희망직업</th>
-	<th width="150px" colspan="4"> S/W 개발자 </th>
+	<th width="130px" colspan="4"> S/W 개발자 </th>
 	</tr>
 	</table>
 	
@@ -111,7 +125,7 @@ th, td {
 	
 		<table border="1">
 	<tr>
-	<th width="700px" height="50" colspan="5"> 프로젝트 참여</th>
+	<th width="700px" height="50" colspan="5" style="font-size: larger;"> 프로젝트 참여</th>
 	</tr>
 	
 			
@@ -182,9 +196,11 @@ th, td {
 	</table>
 	
 	<br><br>
-	 <span id="버튼"><a href="memberList.html" style="font-size: X-Large;" > 목록 </a> </span> 
-	 <span id="버튼"><a href="memberEdit.html" style="font-size: X-Large;"> 수정 </a> </span>
-	 <span id="버튼"><a href="memberlist.html" style="font-size: X-Large;"> 삭제 </a> </span>
+	 <div> <span id="button" ><a href="memberList.html"> 목록 </a> </span> </div>
+	 <br>
+	 <div> <span id="button"><a href="memberEdit.html"> 수정 </a> </span> </div>
+	 <br>
+	 <div> <span id="button"><a href="memberlist.html"> 삭제 </a> </span> </div>
 	
 <br>
 </body>
