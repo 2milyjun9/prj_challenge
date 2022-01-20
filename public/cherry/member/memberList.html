@@ -13,8 +13,9 @@
 <script src="https://kit.fontawesome.com/0bd8c4f8de.js"
 	crossorigin="anonymous"></script>
 
-
-
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dongle&display=swap" rel="stylesheet">
 
 <link rel="shortcut icon" type="image/x-icon" href="./cherry.png">
 <title>회원목록</title>
@@ -24,26 +25,26 @@
 
 
 <style>
-body {
-	font-family: Arial;
-	font-size: 15px;
+
+*{
+font-family: 'Dongle', sans-serif;
+	font-size: 28px;
+
 }
+
 </style>
 
 <body>
 	<!--  -->
 
 	<br>
-	<br>
-	<br>
+
 	<h1 align="center">회 원 리 스 트</h1>
 
 	<img src="./cherry.png" class="rounded mx-auto d-block" alt="...">
 
 	<br>
 	<br>
-	<br>
-
 	<div style="width: 75%; float: none; margin: 0 auto">
 		<div class="text-end" style="width: 15%; float: right; margin: 0 auto">
 			<label for="exampleDataList" class="form-label form-checked-inline">
@@ -76,14 +77,14 @@ body {
 						<div class="m_check_wrap">
 							<th><input type="checkbox" id="allCheck"
 								onclick="allCheck(event)"> <label for="allCheck">
-									전체선택</label></th>
+									전체 선택</label></th>
 						</div>
 						<th  onclick=sortContent(0)>이름 <i class="fas fa-sort"> </i></th>
 						<th  onclick=sortContent(0)>아이디  <i class="fas fa-sort"> </i></th>
 						<th  onclick=sortContent(0)>생년월일  <i class="fas fa-sort"> </i> </th>
 						<th  onclick=sortContent(0)>연락처  <i class="fas fa-sort"> </i></th>
 						<th>컨택</th>
-						<th>체리등급</th>
+						<th>체리 등급</th>
 					</tr>
 				</thead>
 				<tbody id="mainTable_tbody">
@@ -108,7 +109,7 @@ body {
 								<div class="modal-dialog">
 									<div class="modal-content">
 										<div class="modal-header">
-											<h5 class="modal-title" id="sms">sms 전송</h5>
+											<h5 class="modal-title" id="sms">	<i class="fas fa-envelope-open-text"></i>SMS</h5>
 											<button type="button" class="btn-close"
 												data-bs-dismiss="modal" aria-label="Close"></button>
 										</div>
