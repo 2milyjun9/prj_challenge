@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+	crossorigin="anonymous">
+
+<link rel="shortcut icon" type="image/x-icon"
+	href="../../../images/golf3.png">
+<script src="https://kit.fontawesome.com/0bd8c4f8de.js"
+	crossorigin="anonymous"></script>
+
+
+<style>
+* {
+	font-family: 'Dongle', sans-serif;
+	font-size: 15px;
+}
+
+body {
+	width: 80%;
+	float: none;
+	margin: 0 auto;
+}
+</style>
+
+<title>Golf Tour (가제)</title>
+</head>
+<body>
+	<!--  -->
+
+	<a href="./login.html"><img src="../../../images/golf3.png"
+		class="rounded mx-auto d-block" alt="..." width="200px" height="200px"></a>
+
+	<br> 
+	
+	
+		<button class="btn btn-success" type="button"
+				data-bs-toggle="collapse" data-bs-target="#collapseWidthExample"
+				aria-expanded="false" aria-controls="collapseWidthExample"
+				title="더 많은 혜택을 누리세요!"> <i class="fas fa-user-circle"></i> 나의계정 </button>
+
+			<div style="min-height: 0px;">
+				<div class="collapse collapse-horizontal" id="collapseWidthExample">
+					<div
+						style="border: dotted; border-color: green; border-radius: 20px; border-width: 3px;">
+						<div class="container">
+							<div class="row">
+								<div class="col">
+									<br>
+									<form class="row gx-3 gy-2 align-items-center">
+										<div class="col-sm-3 ">
+											<label class="" for="specificSizeInputName">ID</label> <input
+												type="text" class="form-control" id="specificSizeInputName"
+												placeholder="이메일주소">
+										</div>
+										<div class="col-sm-3">
+											<label class="" for="specificSizeInputGroupUsername"></label>
+											<div class="input-group">
+												<div class="input-group-text">@</div>
+												<input type="text" class="form-control"
+													id="specificSizeInputGroupUsername" placeholder="직접입력">
+											</div>
+										</div>
+										<div class="col-sm-3">
+											<label class="" for="specificSizeSelect"></label> <select
+												class="form-select" id="specificSizeSelect">
+												<option selected>선택</option>
+												<option value="1">@naver.com</option>
+												<option value="2">@hanmail.net</option>
+												<option value="3">@nate.com</option>
+												<option value="3">직접입력</option>
+											</select>
+										</div>
+										<div class="col-sm-3">
+											<label for="visually-hidden" class="specificSizeSelect">패스워드</label>
+											<input type="password" class="form-control" id="password"
+												placeholder="영문/숫자 혼합 8자이상">
+										</div>
+										<br>
+										<div class="col-auto">
+											<div class="form-check">
+												<input class="form-check-input" type="checkbox"
+													id="autoSizingCheck2"> <label
+													class="form-check-label" for="autoSizingCheck2">
+													Auto login </label> <br>
+												<br>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+						<div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+							aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+							<div class="modal-dialog modal-dialog-centered">
+								<div class="modal-content">
+									<div class="modal-header">
+										<h5 class="modal-title" id="exampleModalToggleLabel">성공</h5>
+										<button type="button" class="btn-close"
+											data-bs-dismiss="modal" aria-label="Close"></button>
+									</div>
+									<div class="modal-body">로그인에 성공하였습니다.</div>
+									<div class="modal-footer">
+										<button class="btn btn-primary"
+											data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">확인</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modal fade" id="exampleModalToggle2"
+							aria-hidden="true" aria-labelledby="exampleModalToggleLabel2"
+							tabindex="-1">
+							<div class="modal-content">
+								<div class="modal-header">
+									<h5 class="modal-title" id="exampleModalToggleLabel2">실패</h5>
+									<button type="button" class="btn-close" data-bs-dismiss="modal"
+										aria-label="Close"></button>
+								</div>
+								<div class="modal-body">아이디 혹은 패스워드를 다시 한번 확인해주세요.</div>
+								<div class="modal-footer">
+									<button class="btn btn-primary"
+										data-bs-target="#exampleModalToggle" data-bs-toggle="modal">다시시도</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<br> <br>
+					<div class="row text-center" style="width: 100%">
+						<div style="width: 100%; float: none; margin: 0 auto">
+							<a class="btn btn-success" data-bs-toggle="modal"
+								href="#exampleModalToggle" role="button">로그인</a> <br> <br>
+							<br> <br>
+							<p style="float: right; margin: 0 auto">
+								<a href="./memberForm.html"> <i class="fas fa-user-circle"></i>회원가입&nbsp;
+								</a> <a href=""> 아이디 찾기&nbsp;</a> <a href=""> 비밀번호 찾기</a>
+							</p>
+							<br> <br> <br>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+
+
+			<button type="button" class="btn btn-success" id="liveToastBtn"
+				title="CLICK!">
+				<i class="far fa-hand-point-right"></i> 긴급특가
+			</button>
+
+			<div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+				<div id="liveToast" class="toast" role="alert" aria-live="assertive"
+					aria-atomic="true">
+					<div class="toast-header">
+						<strong class="me-auto">태국지상낙원 36홀</strong>
+						<button type="button" class="btn-close" data-bs-dismiss="toast"
+							aria-label="Close"></button>
+					</div>
+					<div class="toast-body">
+						<small> <i class="fas fa-hourglass-half"></i> 1/26
+							17시예약까지!
+						</small> <br> <img src="../../../images/ad.jpg" class="rounded me-2"
+							alt="..." width="250px"> <br> <br>
+						<button type="button" class="btn btn-success btn-sm"> 상품
+							바로가기</button>
+						<button type="button" class="btn btn-secondary btn-sm"
+							data-bs-dismiss="toast">닫기</button>
+					</div>
+				</div>
+			</div>
+	
+			<br>	<br>
+	
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="./login.html">Menu</a>
+			<button class="navbar-toggler" type="button"
+				data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+				aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item dropdown"><a
+						class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+						role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						 골프패키지 둘러보기 </a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li>국내</li>
+							<li><a class="dropdown-item" href="#">수도권</a></li>
+							<li><a class="dropdown-item" href="#">수도권 외</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li>해외</li>
+							<li><a class="dropdown-item" href="#">일본/중국</a></li>
+							<li><a class="dropdown-item" href="#">동남아</a></li>
+							<li><a class="dropdown-item" href="#">기타</a></li>
+						</ul></li>
+							<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item dropdown"><a
+						class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+						role="button" data-bs-toggle="dropdown" aria-expanded="false">
+						 단품상품 둘러보기 </a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+							<li><a class="dropdown-item" href="#">골프+호텔</a></li>
+							<li><a class="dropdown-item" href="#">공항픽업서비스</a></li>
+							<li><a class="dropdown-item" href="#">현지가이드 </a></li>
+
+						</ul></li>
+					<li class="nav-item"><a class="nav-link" href="#">이벤트</a></li>
+					<li class="nav-item"><a class="nav-link" href="#">레슨투어</a></li>
+
+					<li class="nav-item dropdown"><a
+						class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+						role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							<i class="fas fa-dove"></i> 버디 커뮤니티
+					</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="#">모임가입 및 만들기</a></li>
+							<li><a class="dropdown-item" href="#">버디 랭킹</a></li>
+							<li><a class="dropdown-item" href="#">버디 대회</a></li>
+						</ul></li>
+					<li class="nav-item dropdown"><a
+						class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+						role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							마이페이지 </a>
+
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item" href="#">예약관리</a></li>
+							<li><a class="dropdown-item" href="#">견적문의</a></li>
+							<li><a class="dropdown-item" href="#">나의 버디모임</a></li>
+							<li><a class="dropdown-item" href="#">나의 버디관리</a></li>
+							<li><a class="dropdown-item" href="#">나의 버디포인트</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item" href="#">고객센터</a></li>
+							<li><a class="dropdown-item" href="#">1:1 문의</a></li>
+							<li><a class="dropdown-item" href="#">로그아웃</a></li>
+						</ul></li>
+				</ul>
+			</div>
+	</nav>
+
+
+	<!--  -->
+	<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous">
+		
+	</script>
+
+	<script>
+		var toastTrigger = document.getElementById('liveToastBtn')
+		var toastLiveExample = document.getElementById('liveToast')
+		if (toastTrigger) {
+			toastTrigger.addEventListener('click', function() {
+				var toast = new bootstrap.Toast(toastLiveExample)
+				toast.show()
+			})
+		}
+	</script>
+
+
+</body>
+</html>
