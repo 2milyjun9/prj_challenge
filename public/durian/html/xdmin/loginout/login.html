@@ -35,7 +35,6 @@
 	text-decoration-line: none;
 }
 
-
 body {
 	width: 80%;
 	float: none;
@@ -74,138 +73,158 @@ a { /*링크 줄안가게하기*/
 }
 
 .navbar-nav>li { /*네비바 간격*/
-	margin-left: 25px;
-	margin-right: 25px;
+	margin-left: 20px;
+	margin-right: 20px;
 }
+
+ #mobileemail {  /* 모바일용로그인창 */
+    border : solid;
+    border-width : 1px;
+    margin : 10px;
+    padding : 10px;
+    border-radius:20px;
+    font-size: 15px;
+    border : solid;
+    border-color : green;
+    }
 </style>
 
 <title>Golf Tour (가제)</title>
 </head>
+
+<!-- <body style="background-image: url(../../../images/xdmin/golfmain.png);  background-size: cover; "> -->
+
+
 <body>
-	<!--  -->
+
+	<!-- 웹버전로고 -->
+	<div class="d-none d-xl-block ">
+		<a href="./login.html"><img src="../../../images/xdmin/golf3.png"
+			class="rounded mx-auto d-block" alt="..." width="250px"
+			height="250px"></a> <br> <br> <br>
+	</div>
+
+	<!-- 모바일버전로고 -->
+	<div class=" d-lg-block d-xl-none">
+		<a href="./login.html"><img
+			src="../../../images/xdmin/golflogo2.png"
+			class="rounded mx-auto d-block" alt="..." width="150px"
+			height="150px"></a>
+	</div>
 
 
-	<a href="./login.html"><img src="../../../images/golf3.png"
-		class="rounded mx-auto d-block" alt="..." width="250px" height="250px"></a>
-
-	<br>
-	<br>
-	<br>
-
-				<nav class="navbar navbar-expand-lg navbar-light bg-light">
-					<div class="container-fluid">
-						<button class="navbar-toggler" type="button"
-							data-bs-toggle="collapse"
-							data-bs-target="#navbarSupportedContent"
-							aria-controls="navbarSupportedContent" aria-expanded="false"
-							aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
-						</button>
+	<div class="d-none d-xl-block ">
+		<!-- 모바일버전감춤 -->
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<div class="container-fluid">
+				<button class="navbar-toggler" type="button"
+					data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent" aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+						<li class="nav-item dropdown"><a
+							class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+							role="button" data-bs-toggle="dropdown" aria-expanded="false">
+								골프패키지 둘러보기 </a>
+							<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li>국내</li>
+								<li><a class="dropdown-item" href="#">수도권</a></li>
+								<li><a class="dropdown-item" href="#">수도권 외</a></li>
+								<li><hr class="dropdown-divider"></li>
+								<li>해외</li>
+								<li><a class="dropdown-item" href="#">일본/중국</a></li>
+								<li><a class="dropdown-item" href="#">동남아</a></li>
+								<li><a class="dropdown-item" href="#">기타</a></li>
+							</ul></li>
 						<div class="collapse navbar-collapse" id="navbarSupportedContent">
 							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
 								<li class="nav-item dropdown"><a
 									class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
 									role="button" data-bs-toggle="dropdown" aria-expanded="false">
-										골프패키지 둘러보기 </a>
+										단품상품 둘러보기 </a>
 									<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-										<li>국내</li>
-										<li><a class="dropdown-item" href="#">수도권</a></li>
-										<li><a class="dropdown-item" href="#">수도권 외</a></li>
-										<li><hr class="dropdown-divider"></li>
-										<li>해외</li>
-										<li><a class="dropdown-item" href="#">일본/중국</a></li>
-										<li><a class="dropdown-item" href="#">동남아</a></li>
-										<li><a class="dropdown-item" href="#">기타</a></li>
+
+										<li><a class="dropdown-item" href="#">골프+호텔</a></li>
+										<li><a class="dropdown-item" href="#">공항픽업서비스</a></li>
+										<li><a class="dropdown-item" href="#">현지가이드 </a></li>
+
 									</ul></li>
-								<div class="collapse navbar-collapse"
-									id="navbarSupportedContent">
-									<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-										<li class="nav-item dropdown"><a
-											class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-											role="button" data-bs-toggle="dropdown" aria-expanded="false">
-												단품상품 둘러보기 </a>
-											<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<li class="nav-item"><a class="nav-link" href="#">이벤트</a></li>
+								<li class="nav-item"><a class="nav-link" href="#">레슨투어</a></li>
 
-												<li><a class="dropdown-item" href="#">골프+호텔</a></li>
-												<li><a class="dropdown-item" href="#">공항픽업서비스</a></li>
-												<li><a class="dropdown-item" href="#">현지가이드 </a></li>
+								<li class="nav-item dropdown"><a
+									class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+									role="button" data-bs-toggle="dropdown" aria-expanded="false">
+										<i class="fas fa-dove"></i> 버디 커뮤니티
+								</a>
+									<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<li><a class="dropdown-item" href="#">모임가입 및 만들기</a></li>
+										<li><a class="dropdown-item" href="#">버디 랭킹</a></li>
+										<li><a class="dropdown-item" href="#">버디 대회</a></li>
+									</ul></li>
+								<li class="nav-item dropdown"><a
+									class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+									role="button" data-bs-toggle="dropdown" aria-expanded="false">
+										마이페이지 </a>
 
-											</ul></li>
-										<li class="nav-item"><a class="nav-link" href="#">이벤트</a></li>
-										<li class="nav-item"><a class="nav-link" href="#">레슨투어</a></li>
+									<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<li><a class="dropdown-item" href="#">예약관리</a></li>
+										<li><a class="dropdown-item" href="#">견적문의</a></li>
+										<li><a class="dropdown-item" href="#">나의 버디모임</a></li>
+										<li><a class="dropdown-item" href="#">나의 버디관리</a></li>
+										<li><a class="dropdown-item" href="#">나의 버디포인트</a></li>
+										<li><hr class="dropdown-divider"></li>
+										<li><a class="dropdown-item" href="#">고객센터</a></li>
+										<li><a class="dropdown-item" href="#">1:1 문의</a></li>
+										<li><a class="dropdown-item" href="#">로그아웃</a></li>
+									</ul></li>
+								<li class="nav-item"><a class="nav-link" type="text"
+									data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+									aria-controls="offcanvasRight">상품검색<i class="fas fa-search"></i>
+								</a></li>
 
-										<li class="nav-item dropdown"><a
-											class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-											role="button" data-bs-toggle="dropdown" aria-expanded="false">
-												<i class="fas fa-dove"></i> 버디 커뮤니티
-										</a>
-											<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-												<li><a class="dropdown-item" href="#">모임가입 및 만들기</a></li>
-												<li><a class="dropdown-item" href="#">버디 랭킹</a></li>
-												<li><a class="dropdown-item" href="#">버디 대회</a></li>
-											</ul></li>
-										<li class="nav-item dropdown"><a
-											class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-											role="button" data-bs-toggle="dropdown" aria-expanded="false">
-												마이페이지 </a>
-
-											<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-												<li><a class="dropdown-item" href="#">예약관리</a></li>
-												<li><a class="dropdown-item" href="#">견적문의</a></li>
-												<li><a class="dropdown-item" href="#">나의 버디모임</a></li>
-												<li><a class="dropdown-item" href="#">나의 버디관리</a></li>
-												<li><a class="dropdown-item" href="#">나의 버디포인트</a></li>
-												<li><hr class="dropdown-divider"></li>
-												<li><a class="dropdown-item" href="#">고객센터</a></li>
-												<li><a class="dropdown-item" href="#">1:1 문의</a></li>
-												<li><a class="dropdown-item" href="#">로그아웃</a></li>
-											</ul></li>
-										<li class="nav-item"><a class="nav-link" type="text"
-											data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-											aria-controls="offcanvasRight">상품검색<i
-												class="fas fa-search"></i>
-										</a></li>
-
-										<li class="nav-item dropdown"><a
-											class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
-											role="button" data-bs-toggle="dropdown" aria-expanded="false">
-												<i class="fas fa-user"> </i> 로그인
-										</a>
-											<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-												<li>
-
-													<form class="px-4 py-3">
-														<div class="mb-3" class="mx-auto" style="width: 200px;">
-															<label for="exampleDropdownFormEmail1" class="form-label">이메일주소</label>
-															<input type="email" class="form-control"
-																id="exampleDropdownFormEmail1"
-																placeholder="email@example.com">
-														</div>
-														<div class="mb-3" class="mx-auto" style="width: 200px;">
-															<label for="exampleDropdownFormPassword1"
-																class="form-label">비밀번호</label> <input type="password"
-																class="form-control" id="exampleDropdownFormPassword1"
-																placeholder="Password">
-														</div>
-														<div class="mb-3" class="mx-auto" style="width: 200px;">
-															<div class="form-check">
-																<input type="checkbox" class="form-check-input"
-																	id="dropdownCheck"> <label
-																	class="form-check-label" for="dropdownCheck">
-																	아이디 저장 </label>
-															</div>
-														</div>
-														<div style="text-align: center;">
-															<button type="submit" class="btn btn-success">로그인</button>
-													</form> <br> <br> <a href="./memberForm.html">회원가입</a> <a
-													href="#">비밀번호찾기</a>
-								</div>
+								<li class="nav-item dropdown"><a
+									class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+									role="button" data-bs-toggle="dropdown" aria-expanded="false">
+										<i class="fas fa-user"> </i> 로그인
+								</a>
+									<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+										<li><form class="px-4 py-3">
+												<div class="mb-3" class="mx-auto" style="width: 200px;">
+													<label for="exampleDropdownFormEmail1" class="form-label">이메일주소</label>
+													<input type="email" class="form-control"
+														id="exampleDropdownFormEmail1"
+														placeholder="email@example.com">
+												</div>
+												<div class="mb-3" class="mx-auto" style="width: 200px;">
+													<label for="exampleDropdownFormPassword1"
+														class="form-label">비밀번호</label> <input type="password"
+														class="form-control" id="exampleDropdownFormPassword1"
+														placeholder="Password">
+												</div>
+												<div class="mb-3" class="mx-auto" style="width: 200px;">
+													<div class="form-check">
+														<input type="checkbox" class="form-check-input"
+															id="dropdownCheck"> <label
+															class="form-check-label" for="dropdownCheck"> 아이디
+															저장 </label>
+													</div>
+												</div>
+												<div style="text-align: center;">
+													<button type="submit" class="btn btn-success">로그인</button>
+											</form> <br> <br> <a href="./memberForm.html">회원가입</a> <a
+											href="#">비밀번호찾기</a></li>
+									</ul></li>
+							</ul>
 						</div>
-						</ul>
-					</div>
+				</div>
 			</div>
-			</nav>
-		</div>
+		</nav>
+	</div>
+
 
 
 	<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
@@ -240,6 +259,9 @@ a { /*링크 줄안가게하기*/
 	<br>
 	<br>
 
+	<!-- 이미지슬라이드 -->
+	<div class="d-none d-xl-block ">
+		<!-- 모바일버전감춤 -->
 	<div id="carouselExampleCaptions" class="carousel slide"
 		data-bs-ride="carousel">
 		<div class="carousel-indicators">
@@ -288,46 +310,70 @@ a { /*링크 줄안가게하기*/
 				class="visually-hidden">Next</span>
 		</button>
 	</div>
+	</div>
 
 
-
-
-	<!-- The Modal -->
-	<div id="myModal" class="modal">
-
-		<!-- Modal content -->
-		<div class="modal-content">
-			<p style="text-align: center;">
-				<span style="font-size: 14pt;"><b><span
-						style="font-size: 20pt;"> 오늘의 긴급특가</span></b></span>
-			</p>
-			<p style="text-align: center; line-height: 1.5;">
-				<br /> <a href=""><img src="../../../images/thaigolf.jpg"
-					class="d-block w-100" alt="..."> </a>
-			</p>
-			<p>
-				<br />
-			</p>
-			<div style="text-align: center; text-color: white;"
-				onClick="close_pop();">
-				<span class="pop_bt" style="font-size: 13pt;"> <a href="">
-						<button type="button" class="btn btn-success">상품바로가기</button>
-				</a>
-
-				</span> <span class="pop_bt" style="font-size: 13pt;">
-					<button type="button" class="btn btn-secondary">닫기</button>
-				</span>
+	<div class="d-none d-xl-block ">
+		<!-- The Modal -->
+		<div id="myModal" class="modal">
+			<!-- Modal content -->
+			<div class="modal-content">
+				<p style="text-align: center;">
+					<span style="font-size: 14pt;"><b><span
+							style="font-size: 20pt;"> 오늘의 긴급특가</span></b></span>
+				</p>
+				<p style="text-align: center; line-height: 1.5;">
+					<br /> <a href=""><img src="../../../images/thaigolf.jpg"
+						class="d-block w-100" alt="..."> </a>
+				</p>
+				<p>
+					<br />
+				</p>
+				<div style="text-align: center; text-color: white;"
+					onClick="close_pop();">
+					<span class="pop_bt" style="font-size: 13pt;"> <a href="">
+							<button type="button" class="btn btn-success">상품바로가기</button>
+					</a>
+					</span> <span class="pop_bt" style="font-size: 13pt;">
+						<button type="button" class="btn btn-secondary">닫기</button>
+					</span>
+				</div>
 			</div>
 		</div>
 	</div>
 	<!--End Modal-->
-	
-	
-	
 
 
+	<!-- 모바일버전로그인창 -->
+	<div class="  d-lg-block d-xl-none">
+<div id=mobileemail>
+  <form class="px-4 py-3">
+    <div class="mb-3">
+      <label for="exampleDropdownFormEmail1" class="form-label">아이디</label>
+      <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+    </div>
+    <div class="mb-3">
+      <label for="exampleDropdownFormPassword1" class="form-label">패스워드</label>
+      <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+    </div>
+    <div class="mb-3">
+      <div class="form-check">
+        <input type="checkbox" class="form-check-input" id="dropdownCheck">
+        <label class="form-check-label" for="dropdownCheck">
+          아이디저장
+        </label>
+      </div>
+    </div>
+    <button type="submit" class="btn btn-success">로그인</button>
+  </form>
+  <div class="dropdown-divider"></div>
+  <a class="dropdown-item" href="#">회원가입</a>
+  <a class="dropdown-item" href="#">비밀번호찾기</a>
+</div>  </div>
 	<br>
 	<br>
+	<br>
+
 	<!--  -->
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
