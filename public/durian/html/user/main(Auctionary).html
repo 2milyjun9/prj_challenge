@@ -79,6 +79,16 @@ a { /*링크 줄안가게하기*/
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<div class="container-fluid">
 			<form class="d-flex">
+				<div class="dropdown">
+					<button class="btn btn-secondary dropdown-toggle" type="button"
+						id="dropdownMenuButton1" data-bs-toggle="dropdown"
+						aria-expanded="false">카테고리</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+						<li><a class="dropdown-item" href="#">Action</a></li>
+						<li><a class="dropdown-item" href="#">Another action</a></li>
+						<li><a class="dropdown-item" href="#">Something else here</a></li>
+					</ul>
+				</div>
 				<input class="form-control me-2" type="search" placeholder="상품명"
 					aria-label="Search">
 				<button class="btn btn-outline-primary" type="submit">Search</button>
@@ -100,11 +110,17 @@ a { /*링크 줄안가게하기*/
 							<li><hr class="dropdown-divider"></li>
 							<li><a class="dropdown-item" href="#">로그아웃?뭐쓰지</a></li>
 						</ul></li>
+
+					<button type="button" class="btn btn-secondary position-relative">
+						<i class="fas fa-comment"></i> <span
+							class="position-absolute top-0 start-100 translate-middle p-2 bg-danger border border-light rounded-circle">
+							<span class="visually-hidden"> New alerts</span>
+						</span>
+					</button>
 				</ul>
 			</div>
 		</div>
 	</nav>
-
 
 	<br>
 	<br>
@@ -228,9 +244,10 @@ a { /*링크 줄안가게하기*/
 		</div>
 	</div>
 
-		
-	<br><br>
-	
+
+	<br>
+	<br>
+
 	<nav aria-label="Page navigation example">
 		<ul class="pagination justify-content-center">
 			<li class="page-item disabled"><a class="page-link">Previous</a>
@@ -248,9 +265,8 @@ a { /*링크 줄안가게하기*/
 			<!-- Modal content -->
 			<div class="modal-content">
 				<p style="text-align: center;">
-				<b><span style="font-size: 20pt;"> HOT TODAY</span></b>
-				<br>
-					<span style="font-size: 14pt;"> 현재 최다누적ㅇㅇ건</span> 
+					<b><span style="font-size: 20pt;"> HOT TODAY</span></b> <br> <span
+						style="font-size: 14pt;"> 현재 최다누적ㅇㅇ건</span>
 				</p>
 				<p style="text-align: center; line-height: 1.5;">
 					<br /> <a href=""><img src="../../images/xdmin/shoes.png"
