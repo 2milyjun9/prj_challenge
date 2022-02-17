@@ -56,12 +56,54 @@ a { /*링크 줄안가게하기*/
 	user-select: none;
 }
 
+/* 반응형 테이블정렬맞춰보기 !!!!!!!!!으악 !!!!!!!!!!*/
+.maintable {
+	border-collapse: collapse;
+	min-width: 200px;
+}
+
+.maintable th, .maintable td {
+	padding: 10px;
+	border: 1px solid #ddd;
+}
+
 @media ( min-width : 768px) {
-	.bd-placeholder-img-lg {
-		font-size: 3.5rem;
+	.maintable thead {
+		display: none;
+	}
+	.maintable, .maintable tbody, .maintable tr, .maintable th, .maintable td
+		{
+		display: block;
+	}
+	.maintable td {
+		position: relative;
+		padding-left: 50%;
+	}
+	.maintable td:before {
+		position: absolute;
+		top: 24%;
+		right: 65%;
+		font-weight: bold;
+	}
+	.maintable th:nth-of-type(1):before {
+		content: "비밀번호";
+	}
+	.maintable th:nth-of-type(2):before {
+		content: "생년월일";
+	}
+	.maintable th:nth-of-type(3):before {
+		content: "연락처";
+	}
+	.maintable th:nth-of-type(3):before {
+		content: "이메일";
 	}
 }
 
+/* @media ( min-width : 768px) {
+	.bd-placeholder-img-lg {
+		font-size: 3.5rem;
+	}
+}  */
 body {
 	font-size: .9rem;
 }
@@ -270,10 +312,9 @@ body {
 	<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
 		<div
 			class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-			<h1 class="h2">회원정보</h1>
+			<h1 class="h2"> &nbsp;회원정보</h1>
 			<div class="btn-toolbar mb-2 mb-md-0">
 				<div class="btn-group me-2">
-
 					<div class="dropdown">
 						<button class="btn btn-sm btn-outline-secondary dropdown-toggle"
 							type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
@@ -295,36 +336,40 @@ body {
 
 		<nav style="-bs-breadcrumb-divider: '&gt;';" aria-label="breadcrumb">
 			<ol class="breadcrumb">
-				<li class="breadcrumb-item"><a href="...">Home</a></li>
+				<li class="breadcrumb-item"><a href="..."> &nbsp;Home</a></li>
 				<li class="breadcrumb-item"><a href="./memberList.html">List</a></li>
 				<li class="breadcrumb-item active" aria-current="page">View</li>
 			</ol>
 		</nav>
 
-		<div class="row text-center" style="width: 100%">
-			<div style="width: 80%; float: none; margin: 0 auto">
+		<div class="container">
+			<div class="row text-center" style="width: 98%; white-space: nowrap">
 				<div class="table-responsive">
-					<table class="table table-hover">
+					<table class="table table-hover" class="maintable">
 						<thead>
 							<tr>
 								<th scope="col" colspan="5" class="text-warning"
-									style="font-size: 30px; text-align: right">정미림 	<button class="btn btn-warning" type="button"
-								data-bs-toggle="collapse" data-bs-target="#collapseWidthExample"
-								aria-expanded="false" aria-controls="collapseWidthExample">
-								<i class="fas fa-camera"></i>
-							</button> 		<div style="min-height: 0px;">
-								<div class="collapse collapse-horizontal"
-									id="collapseWidthExample">
-									<div class="card card-body" style="width: 200px;">
-									<img src="../../../images/user/mirim.jpg">
+									style="font-size: 30px; text-align: right">정미림
+									<button class="btn btn-warning" type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#collapseWidthExample" aria-expanded="false"
+										aria-controls="collapseWidthExample">
+										<i class="fas fa-camera"></i>
+									</button>
+									<div style="min-height: 0px;">
+										<div class="collapse collapse-horizontal"
+											id="collapseWidthExample">
+											<div class="card card-body" style="width: 200px;">
+												<img src="../../../images/user/mirim.jpg">
+											</div>
+										</div>
 									</div>
-								</div>
-							</div></th>	
+									<hr>
+								</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-						
 								<th class="table-secondary">아이디</th>
 								<td>mija345</td>
 								<th class="table-secondary">비밀번호</th>
@@ -420,58 +465,58 @@ body {
 					</table>
 				</div>
 				<br>
-				<div class="table-responsive">
-					<table class="table table-hover">
-						<thead>
+				<div class="d-none d-xl-block ">
+					<div class="table-responsive">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th scope="col" colspan="5" style="text-align: left">선택입력</th>
+								</tr>
+							</thead>
 							<tr>
-								<th scope="col" colspan="5" style="text-align: left">선택입력</th>
+								<th class="table-secondary">국적</th>
+								<td>대한민국</td>
+								<th class="table-secondary">좋아하는색깔</th>
+								<th><input type="color"
+									class="form-control form-control-color" id="exampleColorInput"
+									value="#563d7c" title="Choose your color"></th>
+								<th class="table-secondary">취미</th>
+								<td>골프 영화감상</td>
 							</tr>
-						</thead>
-						<tr>
-							<th class="table-secondary">국적</th>
-							<td>대한민국</td>
-							<th class="table-secondary">좋아하는색깔</th>
-							<th><input type="color"
-								class="form-control form-control-color" id="exampleColorInput"
-								value="#563d7c" title="Choose your color"></th>
-							<th class="table-secondary">취미</th>
-							<td>골프</td>
-						</tr>
-						<tr>
-							<th class="table-secondary">결혼유무</th>
-							<td>Y</td>
-							<th class="table-secondary">자녀수</th>
-							<td>2</td>
-							<th class="table-secondary">결혼기념일</th>
-							<td>2016.04.16</td>
-						<tr>
-							<th class="table-secondary">우편주소</th>
-							<td>11111</td>
-							<th class="table-secondary">주소</th>
-							<td>서울시 강서구 가양동</td>
-							<th class="table-secondary">상세주소</th>
-							<td>한강아파트 105동 1108호</td>
-						</tr>
-						<tr>
-							<th class="table-secondary">SNS/블로그</th>
-							<td>인스타그램</td>
-							<th class="table-secondary">계정/주소</th>
-							<td>2milyJun9</td>
-							<th class="table-secondary">블로그명</th>
-							<td></td>
-						</tr>
-						<tr>
-							<th class="table-secondary">개인정보유효기간</th>
-							<td>1년</td>
-							<th class="table-secondary">모바일마케팅동의</th>
-							<td>N</td>
-							<th class="table-secondary">이메일마케팅동의</th>
-							<td>N</td>
-						</tr>
-					</table>
+							<tr>
+								<th class="table-secondary">결혼유무</th>
+								<td>Y</td>
+								<th class="table-secondary">자녀수</th>
+								<td>2</td>
+								<th class="table-secondary">결혼기념일</th>
+								<td>2016.04.16</td>
+							<tr>
+								<th class="table-secondary">우편주소</th>
+								<td>11111</td>
+								<th class="table-secondary">주소</th>
+								<td>서울시 강서구 가양동</td>
+								<th class="table-secondary">상세주소</th>
+								<td>한강아파트 105동 1108호</td>
+							</tr>
+							<tr>
+								<th class="table-secondary">SNS/블로그</th>
+								<td>인스타그램</td>
+								<th class="table-secondary">계정/주소</th>
+								<td>2milyJun9</td>
+								<th class="table-secondary">블로그명</th>
+								<td></td>
+							</tr>
+							<tr>
+								<th class="table-secondary">개인정보유효기간</th>
+								<td>1년</td>
+								<th class="table-secondary">모바일마케팅동의</th>
+								<td>N</td>
+								<th class="table-secondary">이메일마케팅동의</th>
+								<td>N</td>
+							</tr>
+						</table>
+					</div>
 				</div>
-
-
 				<div class="table-responsive">
 					<table class="table table-hover">
 						<thead>
@@ -491,7 +536,6 @@ body {
 						</tr>
 					</table>
 				</div>
-
 				<div class="table-responsive">
 					<table class="table table-hover">
 						<thead>
@@ -509,14 +553,11 @@ body {
 				</div>
 			</div>
 		</div>
-
 		<br>
 
 		<div class="row text-center" style="width: 100%">
 			<div style="width: 100%; float: none; margin: 0 auto">
-
 				<!-- Button trigger modal -->
-
 				<button type="button" class="btn btn-sm btn-outline-primary"
 					data-bs-toggle="modal" data-bs-target="#저장">저장</button>
 
@@ -543,16 +584,17 @@ body {
 						</div>
 					</div>
 				</div>
-			
-						<button type="button" class="btn btn-sm btn-outline-warning"
-					data-bs-toggle="modal"> <a href="./memberEdit.html"> 회원수정 </a></button>
-			
+
+				<button type="button" class="btn btn-sm btn-outline-warning">
+					<a href="./memberEdit.html"> 회원수정 </a>
+				</button>
+
 			</div>
 		</div>
 	</main>
 
-<br>
-<br>
+	<br>
+	<br>
 	<script type="text/javascript">
 		/* globals Chart:false, feather:false */
 
