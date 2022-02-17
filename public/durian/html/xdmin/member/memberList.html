@@ -7,7 +7,7 @@
 <meta name="author"
 	content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 <meta name="generator" content="Hugo 0.88.1">
-<title>Auctionary 회원관리</title>
+<title>Auctionary 회원조회</title>
 
 <link rel="canonical"
 	href="https://getbootstrap.com/docs/5.1/examples/dashboard/">
@@ -34,7 +34,8 @@
 	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
 	crossorigin="anonymous">
 
-
+<!-- Custom styles for this template -->
+<link href="dashboard.css" rel="stylesheet">
 
 <!-- Bootstrap core CSS -->
 <link
@@ -42,6 +43,10 @@
 	rel="stylesheet">
 
 <style>
+a { /*링크 줄안가게하기*/
+	text-decoration: none;
+}
+
 .bd-placeholder-img {
 	font-size: 1.125rem;
 	text-anchor: middle;
@@ -57,7 +62,7 @@
 }
 
 body {
-	font-size: .875rem;
+	font-size: .9rem;
 }
 
 .feather {
@@ -81,6 +86,10 @@ body {
 	z-index: 100; /* Behind the navbar */
 	padding: 48px 0 0; /* Height of navbar */
 	box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+	/*미림추가*/
+	margin-left: 10px;
+	font-size: .9rem;
+	width: 120px;
 }
 
 @media ( max-width : 767.98px) {
@@ -129,59 +138,28 @@ body {
 	padding-top: .75rem;
 	padding-bottom: .75rem;
 	font-size: 1rem;
-	box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
 }
 
 .navbar .navbar-toggler {
 	top: .25rem;
 	right: 1rem;
-
-	
-}
-
-.navbar .form-control {
-	padding: .75rem 1rem;
-	border-width: 0;
-	border-radius: 0;
-}
-
-.form-control-dark {
-	color: #fff;
-	background-color: rgba(255, 255, 255, .1);
-	border-color: rgba(255, 255, 255, .1);
-}
-
-.form-control-dark:focus {
-	border-color: transparent;
-	box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
 }
 </style>
-
-
-<!-- Custom styles for this template -->
-<link href="dashboard.css" rel="stylesheet">
 </head>
-
-
-
 <body>
+
+
 
 	<header
 		class="navbar navbar-dark sticky-top bg-dark flex-md-nowrap p-0 shadow">
-		<a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#"> Auctionary</a>
+		<a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">
+			Auctionary</a>
 		<button class="navbar-toggler position-absolute d-md-none collapsed"
 			type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu"
 			aria-controls="sidebarMenu" aria-expanded="false"
 			aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
-		<input class="form-control form-control-dark w-100" type="text"
-			placeholder="Search" aria-label="Search">
-		<div class="navbar-nav">
-			<div class="nav-item text-nowrap">
-				<a class="nav-link px-3" href="#">로그아웃</a>
-			</div>
-		</div>
 	</header>
 
 	<div class="container-fluid">
@@ -189,75 +167,127 @@ body {
 			<nav id="sidebarMenu"
 				class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
 				<div class="position-sticky pt-3">
-					<ul class="nav flex-column">
-						<li class="nav-item"><a class="nav-link " href="#"> <span
-								data-feather="home"></span> Home
-						</a></li>
-						<li class="nav-item"><a class="nav-link" href="#"> <span
-								data-feather="file"></span> 경매관리
-						</a></li>
-						<li class="nav-item"><a class="nav-link active"
-							aria-current="page" href="#"> <span
-								data-feather="shopping-cart"></span> 회원관리
-						</a></li>
-						<li class="nav-item"><a class="nav-link" href="#"> <span
-								data-feather="users"></span> C/S
-						</a></li>
-						<li class="nav-item"><a class="nav-link" href="#"> <span
-								data-feather="bar-chart-2"></span> 리포트
-						</a></li>
-
+					<ul class="list-unstyled ps-0">
+						<li class="mb-1">
+							<button
+								class="btn btn-toggle align-items-center rounded collapsed"
+								data-bs-toggle="collapse" data-bs-target="#dashboard-collapse"
+								aria-expanded="false">상품관리</button>
+							<div class="collapse" id="dashboard-collapse">
+								<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+									<li><a href="#" class="link-dark rounded"> &nbsp;
+											&nbsp;등록상품조회</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="mb-1">
+							<button
+								class="btn btn-toggle align-items-center rounded collapsed"
+								data-bs-toggle="collapse" data-bs-target="#dashboard-collapse"
+								aria-expanded="false">회원관리</button>
+							<div class="collapse" id="dashboard-collapse">
+								<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+									<li><a href="#" class="link-dark rounded"> &nbsp;
+											&nbsp;회원조회</a></li>
+									<li><a href="#" class="link-dark rounded"> &nbsp;
+											&nbsp;회원수정</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="mb-1">
+							<button
+								class="btn btn-toggle align-items-center rounded collapsed"
+								data-bs-toggle="collapse" data-bs-target="#dashboard-collapse"
+								aria-expanded="false">C/S</button>
+							<div class="collapse" id="dashboard-collapse">
+								<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+									<li><a href="#" class="link-dark rounded"> &nbsp;
+											&nbsp;고객센터</a></li>
+									<li><a href="#" class="link-dark rounded"> &nbsp;
+											&nbsp;리뷰관리</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="mb-1">
+							<button
+								class="btn btn-toggle align-items-center rounded collapsed"
+								data-bs-toggle="collapse" data-bs-target="#dashboard-collapse"
+								aria-expanded="false">리포트</button>
+							<div class="collapse" id="dashboard-collapse">
+								<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+									<li><a href="#" class="link-dark rounded"> &nbsp;
+											&nbsp;일간</a></li>
+									<li><a href="#" class="link-dark rounded"> &nbsp;
+											&nbsp;주간</a></li>
+									<li><a href="#" class="link-dark rounded"> &nbsp;
+											&nbsp;월간</a></li>
+									<li><a href="#" class="link-dark rounded"> &nbsp;
+											&nbsp;연간</a></li>
+								</ul>
+							</div>
+						</li>
+						<li class="mb-1">
+							<button
+								class="btn btn-toggle align-items-center rounded collapsed"
+								data-bs-toggle="collapse" data-bs-target="#dashboard-collapse"
+								aria-expanded="false">관리자메뉴</button>
+							<div class="collapse" id="dashboard-collapse">
+								<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+									<li><a href="#" class="link-dark rounded"> &nbsp;
+											&nbsp;시스템관리</a></li>
+									<li><a href="#" class="link-dark rounded"> &nbsp;
+											&nbsp;메뉴관리</a></li>
+									<li><a href="#" class="link-dark rounded"> &nbsp;
+											&nbsp;권한관리</a></li>
+								</ul>
+							</div>
+						</li>
 					</ul>
-
-					<h6
-						class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
-						<span> 관리자메뉴</span> <a class="link-secondary" href="#"
-							aria-label="Add a new report"> <span
-							data-feather="plus-circle"></span>
+					<div class="dropdown border-top">
+						<a href="#"
+							class="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none dropdown-toggle"
+							id="dropdownUser3" data-bs-toggle="dropdown"
+							aria-expanded="false"> <img src="https://github.com/mdo.png"
+							alt="mdo" width="24" height="24" class="rounded-circle">
 						</a>
-					</h6>
-					<ul class="nav flex-column mb-2">
-						<li class="nav-item"><a class="nav-link" href="#"> <span
-								data-feather="file-text"></span> 시스템관리
-						</a></li>
-						<li class="nav-item"><a class="nav-link" href="#"> <span
-								data-feather="file-text"></span> 권한관리
-						</a></li>
-						<li class="nav-item"><a class="nav-link" href="#"> <span
-								data-feather="file-text"></span> 메뉴관리
-						</a></li>
-						<li class="nav-item"><a class="nav-link" href="#"> <span
-								data-feather="file-text"></span> 테스트
-						</a></li>
-					</ul>
+						<ul class="dropdown-menu text-small shadow"
+							aria-labelledby="dropdownUser3">
+							<li><a class="dropdown-item" href="#">그룹웨어</a></li>
+							<li><a class="dropdown-item" href="#">상태변경</a></li>
+							<li><a class="dropdown-item" href="#">프로필수정</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item" href="#">로그아웃</a></li>
+						</ul>
+
+					</div>
 				</div>
 			</nav>
 
 			<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
 				<div
 					class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-					<h1 class="h2">회원관리</h1>
+					<h1 class="h2">회원조회</h1>
 
-				
+
 					<div class="btn-toolbar mb-2 mb-md-0">
 						<div class="btn-group me-2">
-						
+
 							<div class="dropdown">
 								<button class="btn btn-sm btn-outline-secondary dropdown-toggle"
 									type="button" id="dropdownMenuButton1"
 									data-bs-toggle="dropdown" aria-expanded="false">선택</button>
 								<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-									<li><a class="dropdown-item" href="#">이름</a></li>
-									<li><a class="dropdown-item" href="#">생년월일</a></li>
-									<li><a class="dropdown-item" href="#">휴대폰번호</a></li>
+									<li><a class="dropdown-item">이름</a></li>
+									<li><a class="dropdown-item">생년월일</a></li>
+									<li><a class="dropdown-item">휴대폰번호</a></li>
 								</ul>
 							</div>
-							<input type="search" placeholder="회원" aria-label="Search">
+							<input type="search" placeholder="회원조회" aria-label="Search">
 							<button class="btn btn-outline-primary" type="submit">Search</button>
 						</div>
 
 						<div class="btn-group me-2">
-							<button type="button" class="btn btn-sm btn-outline-secondary">엑셀</button>
+							<button type="button" class="btn btn-sm btn-outline-success">엑셀</button>
 						</div>
 
 					</div>
@@ -268,39 +298,39 @@ body {
 					<table class="table table-striped table-sm">
 						<thead>
 							<tr>
-								<th scope="col"> <input type="checkbox" id="allCheck"
+								<th scope="col"><input type="checkbox" id="allCheck"
 									onclick="allCheck(event)"> <label for="allCheck">No.</th>
-						<th onclick=sortContent(0) scope="col">이름 <i
-								class="fas fa-sort"> </i></th>
-							<th onclick=sortContent(0) scope="col">아이디 <i
-								class="fas fa-sort"> </i></th>
-							<th onclick=sortContent(0) scope="col">생년월일 <i
-								class="fas fa-sort"> </i>
-							</th>
-							<th onclick=sortContent(0) scope="col">연락처 <i
-								class="fas fa-sort"> </i></th>
+								<th onclick=sortContent(0) scope="col">이름 <i
+									class="fas fa-sort"> </i></th>
+								<th onclick=sortContent(0) scope="col">아이디 <i
+									class="fas fa-sort"> </i></th>
+								<th onclick=sortContent(0) scope="col">생년월일 <i
+									class="fas fa-sort"> </i>
+								</th>
+								<th onclick=sortContent(0) scope="col">연락처 <i
+									class="fas fa-sort"> </i></th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-							<td scope="row">
-								<div class="m_check_wrap">
-									<input type="checkbox" class="check_all_list" id="agree1"
-										onclick="checkAllList(event)"> <label for="agree1">&nbsp;1</label>
-								</div>
-							</td>
-								<td>정미림</td>
+								<td scope="row">
+									<div class="m_check_wrap">
+										<input type="checkbox" class="check_all_list" id="agree1"
+											onclick="checkAllList(event)"> <label for="agree1">&nbsp;1</label>
+									</div>
+								</td>
+								<td> <a href="./memberView.html">정미림 </a></td>
 								<td>mija345</td>
 								<td>19910907</td>
 								<td>010-9245-6252</td>
 							</tr>
 							<tr>
-									<td scope="row">
-								<div class="m_check_wrap">
-									<input type="checkbox" class="check_all_list" id="agree1"
-										onclick="checkAllList(event)"> <label for="agree1">&nbsp;2</label>
-								</div>
-							</td>
+								<td scope="row">
+									<div class="m_check_wrap">
+										<input type="checkbox" class="check_all_list" id="agree1"
+											onclick="checkAllList(event)"> <label for="agree1">&nbsp;2</label>
+									</div>
+								</td>
 								<td>박기동</td>
 								<td>park6252</td>
 								<td>19791212</td>
@@ -308,11 +338,11 @@ body {
 							</tr>
 							<tr>
 								<td scope="row">
-								<div class="m_check_wrap">
-									<input type="checkbox" class="check_all_list" id="agree1"
-										onclick="checkAllList(event)"> <label for="agree1">&nbsp;3</label>
-								</div>
-							</td>
+									<div class="m_check_wrap">
+										<input type="checkbox" class="check_all_list" id="agree1"
+											onclick="checkAllList(event)"> <label for="agree1">&nbsp;3</label>
+									</div>
+								</td>
 								<td>박선우</td>
 								<td>jr.park</td>
 								<td>2020120</td>
@@ -320,155 +350,155 @@ body {
 							</tr>
 							<tr>
 								<td scope="row">
-								<div class="m_check_wrap">
-									<input type="checkbox" class="check_all_list" id="agree1"
-										onclick="checkAllList(event)"> <label for="agree1">&nbsp;4</label>
-								</div>
-							</td>
+									<div class="m_check_wrap">
+										<input type="checkbox" class="check_all_list" id="agree1"
+											onclick="checkAllList(event)"> <label for="agree1">&nbsp;4</label>
+									</div>
+								</td>
 								<td>박또또</td>
 								<td>jr.park2</td>
 								<td>20220724</td>
 								<td>010-2222-3333</td>
 							</tr>
 							<tr>
-							<td scope="row">
-								<div class="m_check_wrap">
-									<input type="checkbox" class="check_all_list" id="agree1"
-										onclick="checkAllList(event)"> <label for="agree1">&nbsp;5</label>
-								</div>
-							</td>
+								<td scope="row">
+									<div class="m_check_wrap">
+										<input type="checkbox" class="check_all_list" id="agree1"
+											onclick="checkAllList(event)"> <label for="agree1">&nbsp;5</label>
+									</div>
+								</td>
 								<td>정라울</td>
 								<td>puppy.raul</td>
 								<td>20160416</td>
 								<td>010-3333-4444</td>
 							</tr>
-												<tr>
-							<td scope="row">
-								<div class="m_check_wrap">
-									<input type="checkbox" class="check_all_list" id="agree1"
-										onclick="checkAllList(event)"> <label for="agree1">&nbsp;5</label>
-								</div>
-							</td>
+							<tr>
+								<td scope="row">
+									<div class="m_check_wrap">
+										<input type="checkbox" class="check_all_list" id="agree1"
+											onclick="checkAllList(event)"> <label for="agree1">&nbsp;5</label>
+									</div>
+								</td>
 								<td>정라울</td>
 								<td>puppy.raul</td>
 								<td>20160416</td>
 								<td>010-3333-4444</td>
 							</tr>
-												<tr>
-							<td scope="row">
-								<div class="m_check_wrap">
-									<input type="checkbox" class="check_all_list" id="agree1"
-										onclick="checkAllList(event)"> <label for="agree1">&nbsp;5</label>
-								</div>
-							</td>
+							<tr>
+								<td scope="row">
+									<div class="m_check_wrap">
+										<input type="checkbox" class="check_all_list" id="agree1"
+											onclick="checkAllList(event)"> <label for="agree1">&nbsp;5</label>
+									</div>
+								</td>
 								<td>정라울</td>
 								<td>puppy.raul</td>
 								<td>20160416</td>
 								<td>010-3333-4444</td>
 							</tr>
-												<tr>
-							<td scope="row">
-								<div class="m_check_wrap">
-									<input type="checkbox" class="check_all_list" id="agree1"
-										onclick="checkAllList(event)"> <label for="agree1">&nbsp;5</label>
-								</div>
-							</td>
+							<tr>
+								<td scope="row">
+									<div class="m_check_wrap">
+										<input type="checkbox" class="check_all_list" id="agree1"
+											onclick="checkAllList(event)"> <label for="agree1">&nbsp;5</label>
+									</div>
+								</td>
 								<td>정라울</td>
 								<td>puppy.raul</td>
 								<td>20160416</td>
 								<td>010-3333-4444</td>
 							</tr>
-											<tr>
-							<td scope="row">
-								<div class="m_check_wrap">
-									<input type="checkbox" class="check_all_list" id="agree1"
-										onclick="checkAllList(event)"> <label for="agree1">&nbsp;5</label>
-								</div>
-							</td>
+							<tr>
+								<td scope="row">
+									<div class="m_check_wrap">
+										<input type="checkbox" class="check_all_list" id="agree1"
+											onclick="checkAllList(event)"> <label for="agree1">&nbsp;5</label>
+									</div>
+								</td>
 								<td>정라울</td>
 								<td>puppy.raul</td>
 								<td>20160416</td>
 								<td>010-3333-4444</td>
 							</tr>
-												<tr>
-							<td scope="row">
-								<div class="m_check_wrap">
-									<input type="checkbox" class="check_all_list" id="agree1"
-										onclick="checkAllList(event)"> <label for="agree1">&nbsp;5</label>
-								</div>
-							</td>
+							<tr>
+								<td scope="row">
+									<div class="m_check_wrap">
+										<input type="checkbox" class="check_all_list" id="agree1"
+											onclick="checkAllList(event)"> <label for="agree1">&nbsp;5</label>
+									</div>
+								</td>
 								<td>정라울</td>
 								<td>puppy.raul</td>
 								<td>20160416</td>
 								<td>010-3333-4444</td>
 							</tr>
-												<tr>
-							<td scope="row">
-								<div class="m_check_wrap">
-									<input type="checkbox" class="check_all_list" id="agree1"
-										onclick="checkAllList(event)"> <label for="agree1">&nbsp;5</label>
-								</div>
-							</td>
+							<tr>
+								<td scope="row">
+									<div class="m_check_wrap">
+										<input type="checkbox" class="check_all_list" id="agree1"
+											onclick="checkAllList(event)"> <label for="agree1">&nbsp;5</label>
+									</div>
+								</td>
 								<td>정라울</td>
 								<td>puppy.raul</td>
 								<td>20160416</td>
 								<td>010-3333-4444</td>
 							</tr>
-												<tr>
-							<td scope="row">
-								<div class="m_check_wrap">
-									<input type="checkbox" class="check_all_list" id="agree1"
-										onclick="checkAllList(event)"> <label for="agree1">&nbsp;5</label>
-								</div>
-							</td>
+							<tr>
+								<td scope="row">
+									<div class="m_check_wrap">
+										<input type="checkbox" class="check_all_list" id="agree1"
+											onclick="checkAllList(event)"> <label for="agree1">&nbsp;5</label>
+									</div>
+								</td>
 								<td>정라울</td>
 								<td>puppy.raul</td>
 								<td>20160416</td>
 								<td>010-3333-4444</td>
 							</tr>
-													<tr>
-							<td scope="row">
-								<div class="m_check_wrap">
-									<input type="checkbox" class="check_all_list" id="agree1"
-										onclick="checkAllList(event)"> <label for="agree1">&nbsp;5</label>
-								</div>
-							</td>
+							<tr>
+								<td scope="row">
+									<div class="m_check_wrap">
+										<input type="checkbox" class="check_all_list" id="agree1"
+											onclick="checkAllList(event)"> <label for="agree1">&nbsp;5</label>
+									</div>
+								</td>
 								<td>정라울</td>
 								<td>puppy.raul</td>
 								<td>20160416</td>
 								<td>010-3333-4444</td>
 							</tr>
-													<tr>
-							<td scope="row">
-								<div class="m_check_wrap">
-									<input type="checkbox" class="check_all_list" id="agree1"
-										onclick="checkAllList(event)"> <label for="agree1">&nbsp;5</label>
-								</div>
-							</td>
+							<tr>
+								<td scope="row">
+									<div class="m_check_wrap">
+										<input type="checkbox" class="check_all_list" id="agree1"
+											onclick="checkAllList(event)"> <label for="agree1">&nbsp;5</label>
+									</div>
+								</td>
 								<td>정라울</td>
 								<td>puppy.raul</td>
 								<td>20160416</td>
 								<td>010-3333-4444</td>
 							</tr>
-												<tr>
-							<td scope="row">
-								<div class="m_check_wrap">
-									<input type="checkbox" class="check_all_list" id="agree1"
-										onclick="checkAllList(event)"> <label for="agree1">&nbsp;5</label>
-								</div>
-							</td>
+							<tr>
+								<td scope="row">
+									<div class="m_check_wrap">
+										<input type="checkbox" class="check_all_list" id="agree1"
+											onclick="checkAllList(event)"> <label for="agree1">&nbsp;5</label>
+									</div>
+								</td>
 								<td>정라울</td>
 								<td>puppy.raul</td>
 								<td>20160416</td>
 								<td>010-3333-4444</td>
 							</tr>
-												<tr>
-							<td scope="row">
-								<div class="m_check_wrap">
-									<input type="checkbox" class="check_all_list" id="agree1"
-										onclick="checkAllList(event)"> <label for="agree1">&nbsp;5</label>
-								</div>
-							</td>
+							<tr>
+								<td scope="row">
+									<div class="m_check_wrap">
+										<input type="checkbox" class="check_all_list" id="agree1"
+											onclick="checkAllList(event)"> <label for="agree1">&nbsp;5</label>
+									</div>
+								</td>
 								<td>정라울</td>
 								<td>puppy.raul</td>
 								<td>20160416</td>
@@ -481,11 +511,14 @@ body {
 		</div>
 	</div>
 
+
+
+
 	<div class="row text-center" style="width: 100%">
 		<div style="width: 100%; float: none; margin: 0 auto">
 
 			<!-- Button trigger modal -->
-
+			<button type="button" class="btn btn-sm btn-outline-success">회원추가</button>
 			<button type="button" class="btn btn-sm btn-outline-primary"
 				data-bs-toggle="modal" data-bs-target="#저장">저장</button>
 
@@ -514,9 +547,32 @@ body {
 			</div>
 
 
-			<a href="...">
-				<button type="button" class="btn btn-sm btn-outline-secondary">등록</button>
-			</a>
+				<button type="button" class="btn btn-sm btn-outline-danger"
+				data-bs-toggle="modal" data-bs-target="#삭제">삭제</button>
+
+			<!-- Modal -->
+			<div class="modal fade" id="삭제" tabindex="-1"
+				aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h5 class="modal-title" id="exampleModalLabel">
+								<i class="fas fa-exclamation-circle"></i>삭제 확인!
+							</h5>
+							<button type="button" class="btn-close" data-bs-dismiss="modal"
+								aria-label="Close"></button>
+						</div>
+						<div class="modal-body">정말 삭제하시겠습니까?</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-secondary"
+								data-bs-dismiss="modal">취소</button>
+							<a href="memberList.html">
+								<button type="button" class="btn btn-primary">확인</button>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
 
 		</div>
 	</div>
@@ -533,7 +589,7 @@ body {
 			<li class="page-item"><a class="page-link" href="#">3</a></li>
 			<li class="page-item"><a class="page-link" href="#">4</a></li>
 			<li class="page-item"><a class="page-link" href="#">5</a></li>
-	
+
 			<li class="page-item"><a class="page-link" href="#">Next</a></li>
 		</ul>
 	</nav>
@@ -563,14 +619,14 @@ body {
 	<script src="dashboard.js"></script>
 
 
-<!-- 기본템플릿 -->
+	<!-- 기본템플릿 -->
 	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
 		crossorigin="anonymous">
 	</script>
 
-<!-- 정렬 -->
+	<!-- 정렬 -->
 	<script>
 		$(function() {
 			$('#sortable').change(function() {
@@ -635,7 +691,7 @@ body {
 		}
 	</script>
 
-<script type="text/javascript">   //전체선택
+	<script type="text/javascript">   //전체선택
 		function allCheck(e) {
 			if (e.target.checked) {
 				document.querySelectorAll(".check_all_list").forEach(
@@ -662,7 +718,7 @@ body {
 			} else if (checkCount === 0) {
 				document.getElementById("allCheck").checked = true;
 			}
-		}
 	</script>
 
-</body></html>	
+</body>
+</html>
