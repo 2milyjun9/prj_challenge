@@ -154,7 +154,7 @@ body {
 
 	<header
 		class="navbar navbar-dark sticky-top bg-secondary text-white flex-md-nowrap p-0 shadow">
-		<a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">
+		<a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="../main/main.html">
 			Auctionary</a>
 		<button class="navbar-toggler position-absolute d-md-none collapsed"
 			type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu"
@@ -190,9 +190,9 @@ body {
 								>회원관리</button>
 							<div class="collapse" id="회원관리">
 								<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 ">
-									<li><a href="#" class="link-dark rounded"> &nbsp;
+									<li><a href="./memberList.html" class="link-dark rounded"> &nbsp;
 											&nbsp;회원조회</a></li>
-									<li><a href="#" class="link-dark rounded"> &nbsp;
+									<li><a href="./memberEdit.html" class="link-dark rounded"> &nbsp;
 											&nbsp;회원수정</a></li>
 								</ul>
 							</div>
@@ -255,8 +255,8 @@ body {
 						</a>
 						<ul class="dropdown-menu text-small shadow"
 							aria-labelledby="dropdownUser3">
-							<li><a class="dropdown-item" href="#">그룹웨어</a></li>
-							<li><a class="dropdown-item" href="#">프로필수정</a></li>
+							<li><a class="dropdown-item" href="#">결재</a></li>
+							<li><a class="dropdown-item"  onclick="showPopup();">프로필수정</a></li>
 							<li><hr class="dropdown-divider"></li>
 							<li><a class="dropdown-item" href="#">로그아웃</a></li>
 						</ul>
@@ -296,7 +296,7 @@ body {
 
 		<nav style="-bs-breadcrumb-divider: '&gt;';" aria-label="breadcrumb">
 			<ol class="breadcrumb">
-				<li class="breadcrumb-item"><a href="..."> &nbsp;Home</a></li>
+				<li class="breadcrumb-item"><a href="../main/main.html"> &nbsp;Home</a></li>
 				<li class="breadcrumb-item"><a href="./memberList.html">List</a></li>
 				<li class="breadcrumb-item active" aria-current="page">View</li>
 			</ol>
@@ -620,6 +620,12 @@ body {
 			})
 
 	</script>
+	
+	<!-- 팝업 -->
+  <script language="javascript">
+  function showPopup() { window.open("../main/mainProfileEdit.html", "프로필수정", "width=400, height=300, left=100, top=50"); }
+  </script>
+	
 
 	<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 

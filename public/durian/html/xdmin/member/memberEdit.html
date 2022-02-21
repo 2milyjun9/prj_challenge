@@ -148,7 +148,7 @@ body {
 
 	<header
 		class="navbar navbar-dark sticky-top bg-secondary text-white flex-md-nowrap p-0 shadow">
-		<a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">
+		<a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="../main/main.html">
 			Auctionary</a>
 		<button class="navbar-toggler position-absolute d-md-none collapsed"
 			type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu"
@@ -249,8 +249,8 @@ body {
 						</a>
 						<ul class="dropdown-menu text-small shadow"
 							aria-labelledby="dropdownUser3">
-							<li><a class="dropdown-item" href="#">그룹웨어</a></li>
-							<li><a class="dropdown-item" href="#">프로필수정</a></li>
+							<li><a class="dropdown-item" href="#">결재</a></li>
+							<li><a class="dropdown-item"  onclick="showPopup();">프로필수정</a></li>
 							<li><hr class="dropdown-divider"></li>
 							<li><a class="dropdown-item" href="#">로그아웃</a></li>
 						</ul>
@@ -290,7 +290,7 @@ body {
 
 		<nav style="-bs-breadcrumb-divider: '&gt;';" aria-label="breadcrumb">
 			<ol class="breadcrumb">
-				<li class="breadcrumb-item"><a href="...">Home</a></li>
+				<li class="breadcrumb-item"><a href="../main/main.html"> &nbsp;Home</a></li>
 				<li class="breadcrumb-item"><a href="./memberList.html">List</a></li>
 				<li class="breadcrumb-item active"><a href="./memberView.html">
 						View</a></li>
@@ -581,7 +581,6 @@ body {
 			<div style="width: 100%; float: none; margin: 0 auto">
 
 				<!-- Button trigger modal -->
-
 				<button type="button" class="btn btn-sm btn-outline-primary"
 					data-bs-toggle="modal" data-bs-target="#저장">수정</button>
 
@@ -643,5 +642,11 @@ body {
 		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
 		crossorigin="anonymous">
 	</script>
+	
+	<!-- 팝업 -->
+  <script language="javascript">
+  function showPopup() { window.open("../main/mainProfileEdit.html", "프로필수정", "width=400, height=300, left=100, top=50"); }
+  </script>
+	
 </body>
 </html>
