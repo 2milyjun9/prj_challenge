@@ -175,7 +175,7 @@ body {
 								>상품관리</button>
 							<div class="collapse" id="상품관리">
 								<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 ">
-							<li><a href="../product/productList.html" class="link-dark rounded"> &nbsp;
+									<li><a href="./productList.html" class="link-dark rounded"> &nbsp;
 											&nbsp;등록상품조회</a></li>
 								</ul>
 							</div>
@@ -265,7 +265,7 @@ body {
 			<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
 				<div
 					class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-					<h1 class="h2">회원조회</h1>
+					<h1 class="h2">경매조회</h1>
 					<div class="btn-toolbar mb-2 mb-md-0">
 						<div class="btn-group me-2">
 							<button class="btn btn-sm btn-outline-secondary dropdown-toggle"
@@ -277,9 +277,12 @@ body {
 								<li><a class="dropdown-item">닉네임</a></li>
 								<li><a class="dropdown-item">생년월일</a></li>
 								<li><a class="dropdown-item">휴대폰번호</a></li>
+								<li><a class="dropdown-item">게시물제목</a></li>
+								<li><a class="dropdown-item">게시물내용</a></li>
+				
 							</ul>
 						</div>
-						<input type="search" placeholder="회원조회" aria-label="Search">
+						<input type="search" placeholder="상품조회" aria-label="Search">
 						<button class="btn btn-outline-primary" type="submit">Search</button>
 					</div>
 					<div class="btn-group me-2">
@@ -302,14 +305,14 @@ body {
 									No. </label></th>
 						</div>
 
-						<th onclick=sortContent(0) scope="col">이름 <i
+						<th onclick=sortContent(0) scope="col">카테고리 <i
+							class="fas fa-sort">  </i></th>
+						<th onclick=sortContent(0) scope="col"> 상품번호 <i
 							class="fas fa-sort"> </i></th>
-						<th onclick=sortContent(0) scope="col">아이디 <i
-							class="fas fa-sort"> </i></th>
-						<th onclick=sortContent(0) scope="col">생년월일 <i
+						<th onclick=sortContent(0) scope="col"> 아이디 <i
 							class="fas fa-sort"> </i>
 						</th>
-						<th onclick=sortContent(0) scope="col">연락처 <i
+						<th onclick=sortContent(0) scope="col">등록일 <i
 							class="fas fa-sort"> </i></th>
 					</tr>
 				</thead>
