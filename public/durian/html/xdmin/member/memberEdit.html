@@ -7,7 +7,7 @@
 <meta name="author"
 	content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
 <meta name="generator" content="Hugo 0.88.1">
-<title>Auctionary 회원조회</title>
+<title>Auctionary 회원수정</title>
 
 <link rel="canonical"
 	href="https://getbootstrap.com/docs/5.1/examples/dashboard/">
@@ -266,18 +266,15 @@ body {
 			<h1 class="h2">회원수정</h1>
 
 			<div class="btn-toolbar mb-2 mb-md-0">
-				<div class="btn-group me-2">
-					<button class="btn btn-sm btn-outline-secondary dropdown-toggle"
-						type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
-						aria-expanded="false">선택</button>
-					<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-					<li><a class="dropdown-item">이름</a></li>
-								<li><a class="dropdown-item">아이디</a></li>
-								<li><a class="dropdown-item">닉네임</a></li>
-								<li><a class="dropdown-item">생년월일</a></li>
-								<li><a class="dropdown-item">휴대폰번호</a></li>
-					</ul>
-				</div>
+			<div class="btn-group me-2">
+							<label for="numbers"></label> <select id="회원조회">
+								<option value="이름">이름</option>
+								<option value="아이디">아이디</option>
+								<option value="닉네임">닉네임</option>
+								<option value="생년월일">생년월일</option>
+								<option value="휴대폰번호">휴대폰번호</option>
+							</select>
+						</div>
 				<input type="search" placeholder="회원조회" aria-label="Search">
 				<button class="btn btn-outline-primary" type="submit">Search</button>
 			</div>
