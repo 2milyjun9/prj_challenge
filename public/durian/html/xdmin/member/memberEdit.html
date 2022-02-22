@@ -148,8 +148,8 @@ body {
 
 	<header
 		class="navbar navbar-dark sticky-top bg-secondary text-white flex-md-nowrap p-0 shadow">
-		<a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="../main/main.html">
-			Auctionary</a>
+		<a class="navbar-brand col-md-3 col-lg-2 me-0 px-3"
+			href="../main/main.html"> Auctionary</a>
 		<button class="navbar-toggler position-absolute d-md-none collapsed"
 			type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu"
 			aria-controls="sidebarMenu" aria-expanded="false"
@@ -159,7 +159,7 @@ body {
 	</header>
 
 
-			<div class="container-fluid">
+	<div class="container-fluid">
 		<div class="row">
 			<nav id="sidebarMenu"
 				class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
@@ -168,20 +168,18 @@ body {
 						<li class="mb-1">
 							<button
 								class="btn btn-toggle align-items-center rounded collapsed"
-								data-bs-toggle="collapse" data-bs-target="#상품관리"
-								>상품관리</button>
+								data-bs-toggle="collapse" data-bs-target="#상품관리">상품관리</button>
 							<div class="collapse" id="상품관리">
 								<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 ">
-							<li><a href="../product/productList.html" class="link-dark rounded"> &nbsp;
-											&nbsp;등록상품조회</a></li>
+									<li><a href="../product/productList.html"
+										class="link-dark rounded"> &nbsp; &nbsp;등록상품조회</a></li>
 								</ul>
 							</div>
 						</li>
 						<li class="mb-1">
 							<button
 								class="btn btn-toggle align-items-center rounded collapsed"
-								data-bs-toggle="collapse" data-bs-target="#회원관리"
-								>회원관리</button>
+								data-bs-toggle="collapse" data-bs-target="#회원관리">회원관리</button>
 							<div class="collapse" id="회원관리">
 								<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 ">
 									<li><a href="#" class="link-dark rounded"> &nbsp;
@@ -208,8 +206,7 @@ body {
 						<li class="mb-1">
 							<button
 								class="btn btn-toggle align-items-center rounded collapsed"
-								data-bs-toggle="collapse" data-bs-target="#리포트"
-							>리포트</button>
+								data-bs-toggle="collapse" data-bs-target="#리포트">리포트</button>
 							<div class="collapse" id="리포트">
 								<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 ">
 									<li><a href="#" class="link-dark rounded"> &nbsp;
@@ -226,8 +223,7 @@ body {
 						<li class="mb-1">
 							<button
 								class="btn btn-toggle align-items-center rounded collapsed"
-								data-bs-toggle="collapse" data-bs-target="#관리자메뉴"
-							>관리자메뉴</button>
+								data-bs-toggle="collapse" data-bs-target="#관리자메뉴">관리자메뉴</button>
 							<div class="collapse" id="관리자메뉴">
 								<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 ">
 									<li><a href="#" class="link-dark rounded"> &nbsp;
@@ -243,14 +239,14 @@ body {
 					<div class="dropdown border-top">
 						<a href="#"
 							class="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none dropdown-toggle"
-							id="dropdownUser3" data-bs-toggle="dropdown"
-						> <img src="https://github.com/mdo.png"
-							alt="mdo" width="25" height="25" class="rounded-circle">
+							id="dropdownUser3" data-bs-toggle="dropdown"> <img
+							src="https://github.com/mdo.png" alt="mdo" width="25" height="25"
+							class="rounded-circle">
 						</a>
 						<ul class="dropdown-menu text-small shadow"
 							aria-labelledby="dropdownUser3">
 							<li><a class="dropdown-item" href="#">결재</a></li>
-							<li><a class="dropdown-item"  onclick="showPopup();">프로필수정</a></li>
+							<li><a class="dropdown-item" onclick="showPopup();">프로필수정</a></li>
 							<li><hr class="dropdown-divider"></li>
 							<li><a class="dropdown-item" href="#">로그아웃</a></li>
 						</ul>
@@ -258,7 +254,11 @@ body {
 					</div>
 				</div>
 			</nav>
-			</div></div>
+		</div>
+	</div>
+
+
+
 
 	<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
 		<div
@@ -266,15 +266,15 @@ body {
 			<h1 class="h2">회원수정</h1>
 
 			<div class="btn-toolbar mb-2 mb-md-0">
-			<div class="btn-group me-2">
-							<label for="numbers"></label> <select id="회원조회">
-								<option value="이름">이름</option>
-								<option value="아이디">아이디</option>
-								<option value="닉네임">닉네임</option>
-								<option value="생년월일">생년월일</option>
-								<option value="휴대폰번호">휴대폰번호</option>
-							</select>
-						</div>
+				<div class="btn-group me-2">
+					<label for="numbers"></label> <select id="회원조회">
+						<option value="이름">이름</option>
+						<option value="아이디">아이디</option>
+						<option value="닉네임">닉네임</option>
+						<option value="생년월일">생년월일</option>
+						<option value="휴대폰번호">휴대폰번호</option>
+					</select>
+				</div>
 				<input type="search" placeholder="회원조회" aria-label="Search">
 				<button class="btn btn-outline-primary" type="submit">Search</button>
 			</div>
@@ -287,7 +287,8 @@ body {
 
 		<nav style="-bs-breadcrumb-divider: '&gt;';" aria-label="breadcrumb">
 			<ol class="breadcrumb">
-				<li class="breadcrumb-item"><a href="../main/main.html"> &nbsp;Home</a></li>
+				<li class="breadcrumb-item"><a href="../main/main.html">
+						&nbsp;Home</a></li>
 				<li class="breadcrumb-item"><a href="./memberList.html">List</a></li>
 				<li class="breadcrumb-item active"><a href="./memberView.html">
 						View</a></li>
@@ -424,6 +425,7 @@ body {
 					</tbody>
 				</table>
 			</div>
+
 			<br>
 
 
@@ -490,8 +492,8 @@ body {
 							id="floatingInput" value="2"></td>
 						<th class="table-secondary">결혼기념일</th>
 						<td><div class="form-floating mb-3">
-								<input type="date"  class="form-control"
-							id="floatingInput" value="2016-04-16">
+								<input type="date" class="form-control" id="floatingInput"
+									value="2016-04-16">
 							</div></td>
 					<tr>
 						<th class="table-secondary">우편주소</th>
@@ -499,7 +501,7 @@ body {
 							id="floatingInput" value="11111"></td>
 						<th class="table-secondary">주소</th>
 						<td><input type="text" class="form-control"
-							id="floatingInput"value="서울시 강서구 가양동"></td>
+							id="floatingInput" value="서울시 강서구 가양동"></td>
 						<th class="table-secondary">상세주소</th>
 						<td><input type="text" class="form-control"
 							id="floatingInput" value="한강타운 105동1108호"></td>
@@ -554,18 +556,18 @@ body {
 							<th scope="col" colspan="5" style="text-align: left">로그</th>
 						</tr>
 					</thead>
-							<tr>
-					<th class="table-secondary">가입일자</th>
-					<td>2022.02.15 11:30 am</td>
-					<th class="table-secondary">최종접속일</th>
-					<td>2022.02.15 11:30 am</td>
-				</tr>
-				<tr>
-					<th class="table-secondary">최종수정일</th>
-					<td>2022.02.17 11:30 am</td>
-					<th class="table-secondary">최종수정자</th>
-					<td>김수현(000001)</td>
-				</tr>
+					<tr>
+						<th class="table-secondary">가입일자</th>
+						<td>2022.02.15 11:30 am</td>
+						<th class="table-secondary">최종접속일</th>
+						<td>2022.02.15 11:30 am</td>
+					</tr>
+					<tr>
+						<th class="table-secondary">최종수정일</th>
+						<td>2022.02.17 11:30 am</td>
+						<th class="table-secondary">최종수정자</th>
+						<td>김수현(000001)</td>
+					</tr>
 				</table>
 			</div>
 		</div>
@@ -608,6 +610,7 @@ body {
 		</div>
 	</main>
 
+
 	<script type="text/javascript">
 		/* globals Chart:false, feather:false */
 
@@ -639,11 +642,11 @@ body {
 		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
 		crossorigin="anonymous">
 	</script>
-	
+
 	<!-- 팝업 -->
-  <script language="javascript">
+	<script language="javascript">
   function showPopup() { window.open("../main/mainProfileEdit.html", "프로필수정", "width=400, height=300, left=100, top=50"); }
   </script>
-	
+
 </body>
 </html>

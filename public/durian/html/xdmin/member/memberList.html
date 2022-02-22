@@ -269,7 +269,7 @@ body {
 								<option value="아이디">아이디</option>
 								<option value="닉네임">닉네임</option>
 								<option value="생년월일">생년월일</option>
-								<option value="휴대폰번호">휴대폰번호</option>
+								<option value="휴대폰번호">연락처</option>
 							</select>
 						</div>
 						<input type="search" placeholder="회원조회" aria-label="Search">
@@ -306,12 +306,17 @@ body {
 								class="fas fa-sort"> </i></th>
 							<th onclick=sortContent(0) scope="col">아이디 <i
 								class="fas fa-sort"> </i></th>
-							<th onclick=sortContent(0) scope="col">생년월일 <i
+							<th onclick=sortContent(0) scope="col">닉네임 <i
+								class="fas fa-sort"> </i>
+							</th>
+											<th onclick=sortContent(0) scope="col">생년월일 <i
 								class="fas fa-sort"> </i>
 							</th>
 							<th onclick=sortContent(0) scope="col">연락처 <i
 								class="fas fa-sort"> </i></th>
-							<th onclick=sortContent(0) scope="col">비고<i
+							<th onclick=sortContent(0) scope="col">가입일<i
+								class="fas fa-sort"> </i></th>
+															<th onclick=sortContent(0) scope="col">활성상태<i
 								class="fas fa-sort"> </i></th>
 						</tr>
 					</thead>
@@ -325,9 +330,16 @@ body {
 							</td>
 							<td><a href="./memberView.html">정미림 </a></td>
 							<td>mija345</td>
+														<td>테스트아이디</td>
 							<td>19910907</td>
 							<td>010-9245-6252</td>
-							<td></td>
+								<td>2022.02.22.09:00</td>
+						<td><select class="form-select form-select-sm"
+							aria-label="Disabled select example">
+								<option value="1" selected>활성</option>
+								<option value="2">휴먼</option>
+						</select></td>
+						
 						</tr>
 						<tr>
 							<td scope="row">
@@ -338,9 +350,15 @@ body {
 							</td>
 							<td>박기동</td>
 							<td>park6252</td>
+										<td>짱아아빠</td>
 							<td>19791212</td>
 							<td>010-9016-6252</td>
-							<td></td>
+							<td>2022.02.22.09:00</td>
+						<td><select class="form-select form-select-sm"
+							aria-label="Disabled select example">
+								<option value="1" selected>활성</option>
+								<option value="2">휴먼</option>
+						</select></td>
 						</tr>
 						<tr>
 							<td scope="row">
@@ -351,9 +369,15 @@ body {
 							</td>
 							<td>박선우</td>
 							<td>jr.park</td>
+										<td>밥둥이</td>
 							<td>2020120</td>
 							<td>010-1111-2222</td>
-							<td></td>
+							<td>2022.02.22.09:00</td>
+						<td><select class="form-select form-select-sm"
+							aria-label="Disabled select example">
+								<option value="1" >활성</option>
+								<option value="2" selected>휴먼</option>
+						</select></td>
 						</tr>
 						<tr>
 							<td scope="row">
@@ -364,9 +388,15 @@ body {
 							</td>
 							<td>박또또</td>
 							<td>jr.park2</td>
+										<td>또또</td>
 							<td>20220724</td>
 							<td>010-2222-3333</td>
-							<td></td>
+									<td>2022.02.22.09:00</td>
+						<td><select class="form-select form-select-sm"
+							aria-label="Disabled select example">
+								<option value="1" >활성</option>
+								<option value="2" selected>휴먼</option>
+						</select></td>
 						</tr>
 						<tr>
 							<td scope="row">
@@ -377,9 +407,15 @@ body {
 							</td>
 							<td>정라울</td>
 							<td>puppy.raul</td>
+										<td>삼만원</td>
 							<td>20160416</td>
 							<td>010-3333-4444</td>
-							<td></td>
+							<td>2022.02.22.09:00</td>
+						<td><select class="form-select form-select-sm"
+							aria-label="Disabled select example">
+								<option value="1" selected>활성</option>
+								<option value="2">휴먼</option>
+						</select></td>
 						</tr>
 						<tr>
 							<td scope="row">
@@ -390,9 +426,15 @@ body {
 							</td>
 							<td>이혜란</td>
 							<td>hyeranLee</td>
+										<td>준호러브</td>
 							<td>19910710</td>
 							<td>010-4444-5555</td>
-							<td></td>
+							<td>2022.02.22.09:00</td>
+						<td><select class="form-select form-select-sm"
+							aria-label="Disabled select example">
+								<option value="1" selected>활성</option>
+								<option value="2">휴먼</option>
+						</select></td>
 						</tr>
 						<tr>
 							<td scope="row">
@@ -403,9 +445,15 @@ body {
 							</td>
 							<td>고가희</td>
 							<td>elli.go</td>
+										<td>나은아사랑해</td>
 							<td>19910930</td>
 							<td>010-4444-5555</td>
-							<td></td>
+								<td>2022.02.22.09:00</td>
+						<td><select class="form-select form-select-sm"
+							aria-label="Disabled select example">
+								<option value="1" selected>활성</option>
+								<option value="2">휴먼</option>
+						</select></td>
 						</tr>
 						<tr>
 							<td scope="row">
@@ -416,9 +464,15 @@ body {
 							</td>
 							<td>김영지</td>
 							<td>mumuzzang</td>
+										<td>세계정복</td>
 							<td>19900430</td>
 							<td>010-5555-6666</td>
-							<td></td>
+							<td>2022.02.22.09:00</td>
+						<td><select class="form-select form-select-sm"
+							aria-label="Disabled select example">
+								<option value="1" selected>활성</option>
+								<option value="2">휴먼</option>
+						</select></td>
 						</tr>
 						<tr>
 							<td scope="row">
@@ -429,9 +483,15 @@ body {
 							</td>
 							<td>김세진</td>
 							<td>sjkim</td>
+										<td>똥시루</td>
 							<td>19901230</td>
 							<td>010-5555-6666</td>
-							<td></td>
+					<td>2022.02.22.09:00</td>
+						<td><select class="form-select form-select-sm"
+							aria-label="Disabled select example">
+								<option value="1" selected>활성</option>
+								<option value="2">휴먼</option>
+						</select></td>
 						</tr>
 
 					</tbody>
