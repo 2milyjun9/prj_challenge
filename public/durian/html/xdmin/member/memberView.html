@@ -154,8 +154,8 @@ body {
 
 	<header
 		class="navbar navbar-dark sticky-top bg-secondary text-white flex-md-nowrap p-0 shadow">
-		<a class="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="../main/main.html">
-			Auctionary</a>
+		<a class="navbar-brand col-md-3 col-lg-2 me-0 px-3"
+			href="../main/main.html"> Auctionary</a>
 		<button class="navbar-toggler position-absolute d-md-none collapsed"
 			type="button" data-bs-toggle="collapse" data-bs-target="#sidebarMenu"
 			aria-controls="sidebarMenu" aria-expanded="false"
@@ -165,7 +165,7 @@ body {
 	</header>
 
 
-		<div class="container-fluid">
+	<div class="container-fluid">
 		<div class="row">
 			<nav id="sidebarMenu"
 				class="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
@@ -174,26 +174,24 @@ body {
 						<li class="mb-1">
 							<button
 								class="btn btn-toggle align-items-center rounded collapsed"
-								data-bs-toggle="collapse" data-bs-target="#상품관리"
-								>상품관리</button>
+								data-bs-toggle="collapse" data-bs-target="#상품관리">상품관리</button>
 							<div class="collapse" id="상품관리">
 								<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 ">
-							<li><a href="../product/productList.html" class="link-dark rounded"> &nbsp;
-											&nbsp;등록상품조회</a></li>
+									<li><a href="../product/productList.html"
+										class="link-dark rounded"> &nbsp; &nbsp;등록상품조회</a></li>
 								</ul>
 							</div>
 						</li>
 						<li class="mb-1">
 							<button
 								class="btn btn-toggle align-items-center rounded collapsed"
-								data-bs-toggle="collapse" data-bs-target="#회원관리"
-								>회원관리</button>
+								data-bs-toggle="collapse" data-bs-target="#회원관리">회원관리</button>
 							<div class="collapse" id="회원관리">
 								<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 ">
-									<li><a href="./memberList.html" class="link-dark rounded"> &nbsp;
-											&nbsp;회원조회</a></li>
-									<li><a href="./memberEdit.html" class="link-dark rounded"> &nbsp;
-											&nbsp;회원수정</a></li>
+									<li><a href="./memberList.html" class="link-dark rounded">
+											&nbsp; &nbsp;회원조회</a></li>
+									<li><a href="./memberEdit.html" class="link-dark rounded">
+											&nbsp; &nbsp;회원수정</a></li>
 								</ul>
 							</div>
 						</li>
@@ -214,8 +212,7 @@ body {
 						<li class="mb-1">
 							<button
 								class="btn btn-toggle align-items-center rounded collapsed"
-								data-bs-toggle="collapse" data-bs-target="#리포트"
-							>리포트</button>
+								data-bs-toggle="collapse" data-bs-target="#리포트">리포트</button>
 							<div class="collapse" id="리포트">
 								<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 ">
 									<li><a href="#" class="link-dark rounded"> &nbsp;
@@ -232,8 +229,7 @@ body {
 						<li class="mb-1">
 							<button
 								class="btn btn-toggle align-items-center rounded collapsed"
-								data-bs-toggle="collapse" data-bs-target="#관리자메뉴"
-							>관리자메뉴</button>
+								data-bs-toggle="collapse" data-bs-target="#관리자메뉴">관리자메뉴</button>
 							<div class="collapse" id="관리자메뉴">
 								<ul class="btn-toggle-nav list-unstyled fw-normal pb-1 ">
 									<li><a href="#" class="link-dark rounded"> &nbsp;
@@ -249,14 +245,14 @@ body {
 					<div class="dropdown border-top">
 						<a href="#"
 							class="d-flex align-items-center justify-content-center p-3 link-dark text-decoration-none dropdown-toggle"
-							id="dropdownUser3" data-bs-toggle="dropdown"
-						> <img src="https://github.com/mdo.png"
-							alt="mdo" width="25" height="25" class="rounded-circle">
+							id="dropdownUser3" data-bs-toggle="dropdown"> <img
+							src="https://github.com/mdo.png" alt="mdo" width="25" height="25"
+							class="rounded-circle">
 						</a>
 						<ul class="dropdown-menu text-small shadow"
 							aria-labelledby="dropdownUser3">
 							<li><a class="dropdown-item" href="#">결재</a></li>
-							<li><a class="dropdown-item"  onclick="showPopup();">프로필수정</a></li>
+							<li><a class="dropdown-item" onclick="showPopup();">프로필수정</a></li>
 							<li><hr class="dropdown-divider"></li>
 							<li><a class="dropdown-item" href="#">로그아웃</a></li>
 						</ul>
@@ -264,7 +260,8 @@ body {
 					</div>
 				</div>
 			</nav>
-			</div></div>
+		</div>
+	</div>
 
 	<main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
 		<div
@@ -272,35 +269,37 @@ body {
 			<h1 class="h2">&nbsp;회원정보</h1>
 
 			<div class="btn-toolbar mb-2 mb-md-0">
-							<div class="btn-group me-2">
-							<label for="numbers"></label> <select id="회원조회">
-								<option value="이름">이름</option>
-								<option value="아이디">아이디</option>
-								<option value="닉네임">닉네임</option>
-								<option value="생년월일">생년월일</option>
-								<option value="휴대폰번호">휴대폰번호</option>
-							</select>
-						</div>
+				<div class="btn-group me-2">
+					<label for="numbers"></label> <select id="회원조회">
+						<option value="이름">이름</option>
+						<option value="아이디">아이디</option>
+						<option value="닉네임">닉네임</option>
+						<option value="생년월일">생년월일</option>
+						<option value="휴대폰번호">휴대폰번호</option>
+					</select>
+				</div>
 				<input type="search" placeholder="회원조회" aria-label="Search">
 				<button class="btn btn-outline-primary" type="submit">Search</button>
 			</div>
 
 			<!-- 웹버전기본정보테이블//모바일감춤 -->
-					<div class="d-none d-xl-block ">
-						<div class="btn-group me-2">
-							<button type="button" class="btn btn-sm btn-outline-success">엑셀</button>
-						</div>
-					</div>
+			<div class="d-none d-xl-block ">
+				<div class="btn-group me-2">
+					<button type="button" class="btn btn-sm btn-outline-success">엑셀</button>
+				</div>
+			</div>
 		</div>
-	
+
 
 		<nav style="-bs-breadcrumb-divider: '&gt;';" aria-label="breadcrumb">
 			<ol class="breadcrumb">
-				<li class="breadcrumb-item"><a href="../main/main.html"> &nbsp;Home</a></li>
-				<li class="breadcrumb-item"><a href="./memberList.html">List</a></li>
+				<li class="breadcrumb-item"><a href="../main/main.html">
+						&nbsp;Home</a></li>
+				<li class="breadcrumb-item"><a href="./productList.html">List</a></li>
 				<li class="breadcrumb-item active" aria-current="page">View</li>
 			</ol>
 		</nav>
+
 
 		<!-- 모바일버전테이블//웹감춤 -->
 		<div class=" d-lg-block d-xl-none">
@@ -312,7 +311,7 @@ body {
 						data-height="460">
 						<thead>
 							<tr>
-								<th>개인정보</th>
+								<th>경매정보</th>
 							</tr>
 						</thead>
 						<tbody>
@@ -565,7 +564,7 @@ body {
 				</tr>
 			</table>
 		</div>
-		
+
 
 		<br>
 
@@ -621,12 +620,12 @@ body {
 			})
 
 	</script>
-	
+
 	<!-- 팝업 -->
-  <script language="javascript">
+	<script language="javascript">
   function showPopup() { window.open("../main/mainProfileEdit.html", "프로필수정", "width=400, height=300, left=100, top=50"); }
   </script>
-	
+
 
 	<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
 
